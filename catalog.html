@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYURIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/stylesheet.css">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row row">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <img src="image/logo.svg" alt="">
+                        <img src="image/logo__black.svg" alt="">
+                    </div>
+                    <div class="header__nav">
+                        <ul class="header__menu">
+                            <li><button class="menu-item header__menu-item header__catalogJs" href="#">Каталог</button></li>
+                            <li><a class="menu-item header__menu-item" href="#">Коллекции</a></li>
+                            <li><a class="menu-item header__menu-item" href="#">О бренде</a></li>
+                            <li><a class="menu-item header__menu-item" href="#">Покупателям</a></li>
+                            <li><a class="menu-item header__menu-item" href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__svg">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14.7204 15.7923L18.2203 19.2923C18.5103 19.5823 18.7003 19.2923 19.0003 19.0023C19.2903 18.7023 19.5704 18.5223 19.2804 18.2223L15.7803 14.7223C15.4803 14.4223 15.3004 14.7023 15.0004 15.0023C14.7004 15.2923 14.4104 15.4823 14.7104 15.7823L14.7204 15.7923Z" fill="white"/>
+                            <path d="M4.01 10.76C4.01 14.48 7.03 17.51 10.76 17.51C12.57 17.51 14.28 16.78 15.53 15.52C16.78 14.26 17.5 12.56 17.5 10.75C17.5 7.02 14.47 4 10.75 4C7.02 4 4 7.02 4 10.75L4.01 10.76ZM5.51 10.76C5.51 7.86 7.86 5.51 10.76 5.51C13.65 5.51 16.01 7.86 16.01 10.76C16.01 12.16 15.45 13.48 14.47 14.46C13.49 15.44 12.16 16 10.75 16C7.85 16 5.5 13.64 5.5 10.75L5.51 10.76Z" fill="white"/>
+                        </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5.5 15.4988V19.4988H18V15.4988L14.0956 14.2494L15.5873 13.2366L19.5 14.4988V20.9988H4V14.4988L7.91974 13.2344L9.38981 14.2541L5.5 15.4988Z" fill="white"/>
+                            <path d="M11.75 13.5C13 13.5 16.5 11.37 16.5 8.75C16.5 6.12 14.37 4 11.75 4C9.12 4 7 6.12 7 8.75C7 11.37 10.5 13.5 11.75 13.5ZM11.75 12C10.5 12 8.5 10.54 8.5 8.75C8.5 6.95 9.95 5.5 11.75 5.5C13.54 5.5 15 6.95 15 8.75C15 10.54 13 12 11.75 12Z" fill="white"/>
+                        </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18.5002 8.5L19.0004 20H5.50024L6.00004 8.5H18.5002ZM20.0002 7H4.5004L4 21.47L20.5004 21.5L20.0002 7Z" fill="white"/>
+                            <path d="M15.1934 4.75C15.1934 3.23 13.9534 2 12.4434 2C10.9234 2 9.69336 3.23 9.69336 4.75V5.5H11.1934V4.75C11.1934 4.05 11.7434 3.5 12.4434 3.5C13.1334 3.5 13.6934 4.05 13.6934 4.75V5.5H15.1934V4.75Z" fill="white"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="header__catalog">
+                    <div class="header__catalog-line"></div>
+                    <div class="header__catalog-content">
+                        <div class="header__catalog-image">
+                            <img src="image/header__catalog.jpg" alt="">
+                        </div>
+                        <div class="header__catalog-nav">
+                            <ul class="header__catalog-menu">
+                                <li><a href="#" class="menu-item header__catalog-item">Купальники</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">СЛИТНЫЕ КУПАЛЬНИКИ</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Раздельные купальники</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Верх купальники</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Низ купальника</a></li>
+                            </ul>
+                            <ul class="header__catalog-menu">
+                                <li><a href="#" class="menu-item header__catalog-item">Одежда</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Одежда для вечеринок</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Одежда для купания</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">платья</a></li>
+                                <li><a href="#" class="menu-item header__catalog-item">Корсеты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="arrival">
+            <div class="arrival__row row arrival__catalog-row">
+                <div class="video__gradient"></div>
+                <img class="arrival__image" src="image/arrival__image.jpg" alt="">
+                <div class="arrival__content">
+                    <div class="content arrival__content-text arrival__catalog-content">НОВЫЕ ПОСТУПЛЕНИЯ</div>
+                    <div class="title">New Arrivals</div>
+                </div>
+            </div>
+        </div>
+        <div class="card__filters">
+            <div class="container">
+                <div class="card__row row card__filters-row">
+                    <div class="content">(9)</div>
+                    <button class="card__filters-block">
+                        <div class="content">Фильтры</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path d="M3.5 6.5H1V6V5.5H3.5V6.5Z" fill="#222222"/>
+                            <path d="M17 11.5H14.5V10.5H17V11V11.5Z" fill="#222222"/>
+                            <path d="M17 6.5H7.5V5.5H17V6V6.5Z" fill="#222222"/>
+                            <path d="M10.5 11.5H1V11V10.5H10.5V11.5Z" fill="#222222"/>
+                            <path d="M12.5 8.5V9.5L12.12 9.55L11.74 9.71L11.44 9.94L11.22 10.21L11.07 10.55L11 10.99L11.06 11.42L11.22 11.78L11.47 12.09L11.8 12.33L12.17 12.46L12.5 12.5L12.85 12.46L13.24 12.31L13.58 12.04L13.82 11.72L13.95 11.38L14 11L13.94 10.56L13.78 10.21L13.52 9.9L13.17 9.66L12.81 9.53L12.48 9.5V8.5L12.81 8.52L13.14 8.58L13.5 8.71L13.82 8.88L14.11 9.09L14.36 9.34L14.57 9.6L14.73 9.88L14.87 10.19L14.95 10.5L14.99 10.74L15 11L14.99 11.25L14.95 11.5L14.87 11.81L14.73 12.13L14.54 12.44L14.31 12.72L14.05 12.96L13.75 13.16L13.44 13.32L12.94 13.46L12.5 13.5L12.03 13.46L11.57 13.32L11.18 13.12L10.89 12.91L10.61 12.63L10.34 12.26L10.17 11.92L10.07 11.6L10.02 11.27L10 11L10.02 10.71L10.07 10.39L10.19 10.04L10.35 9.73L10.54 9.46L10.76 9.21L11.01 8.99L11.26 8.83L11.53 8.7L11.82 8.59L12.13 8.53L12.5 8.5Z" fill="#222222"/>
+                            <path d="M5.5 3.5V4.5L5.12 4.55L4.74 4.71L4.44 4.94L4.22 5.21L4.07 5.55L4 5.99L4.06 6.42L4.22 6.78L4.47 7.09L4.8 7.33L5.17 7.46L5.5 7.5L5.85 7.46L6.24 7.31L6.58 7.04L6.82 6.72L6.95 6.38L7 6L6.94 5.56L6.78 5.21L6.52 4.9L6.17 4.66L5.81 4.53L5.48 4.5V3.5L5.81 3.52L6.14 3.58L6.5 3.71L6.82 3.88L7.11 4.09L7.36 4.34L7.57 4.6L7.73 4.88L7.87 5.19L7.95 5.5L7.99 5.74L8 6L7.99 6.25L7.95 6.5L7.87 6.81L7.73 7.13L7.54 7.44L7.31 7.72L7.05 7.96L6.75 8.16L6.44 8.32L5.94 8.46L5.5 8.5L5.03 8.46L4.57 8.32L4.18 8.12L3.89 7.91L3.61 7.63L3.34 7.26L3.17 6.92L3.07 6.6L3.02 6.27L3 6L3.02 5.71L3.07 5.39L3.19 5.04L3.35 4.73L3.54 4.46L3.76 4.21L4.01 3.99L4.26 3.83L4.53 3.7L4.82 3.59L5.13 3.53L5.5 3.5Z" fill="#222222"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="card__row row card__catalog-row">
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <img src="image/card-1.jpg" alt="">
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Красный бикини-топ крючком с цветочным узором</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <img src="image/card-2.jpg" alt="">
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Красные плавки бикини с цветочным принтом, связанные крючком</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <img src="image/card-3.jpg" alt="">
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Красный купальник-бюстье в стиле ретро</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <video autoplay muted loop src="video/card__video.mp4"></video>
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Асимметричная юбка для плавания черного цвета с драпировкой</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <img src="image/card-5.jpg" alt="">
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Кремовый лиф бикини с треугольными чашками</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="card__item card__catalog-item">
+                        <div class="card__item-image">
+                            <img src="image/card-6.jpg" alt="">
+                        </div>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Классические плавки кремового цвета</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="card__row row card__row-2">
+                    <div class="card__catalog-left">
+                        <a href="#"><div class="card__item card__catalog-item">
+                            <div class="card__item-image">
+                                <img src="image/catalog__bottom-1.jpg" alt="">
+                            </div>
+                            <div class="card__item-content">
+                                <div class="content card__item-name">Купальник на одно плечо с вырезом и джинсовым принтом</div>
+                                <div class="content card__item-color">Красный  2 Цвета</div>
+                                <div class="content card__item-price">5 999 руб</div>
+                            </div>
+                        </div></a>
+                        <a href="#"><div class="card__item card__catalog-item">
+                            <div class="card__item-image">
+                                <img src="image/catalog__bottom-2.jpg" alt="">
+                            </div>
+                            <div class="card__item-content">
+                                <div class="content card__item-name">Красный топ-бандо с крест-накрест</div>
+                                <div class="content card__item-color">Красный  2 Цвета</div>
+                                <div class="content card__item-price">5 999 руб</div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="card__catalog-right">
+                        <video autoplay muted loop src="video/catalog__bottom.mp4"></video>
+                        <div class="card__item-content">
+                            <div class="content card__item-name">Асимметричная юбка для плавания с драпировкой</div>
+                            <div class="content card__item-color">Красный  2 Цвета</div>
+                            <div class="content card__item-price">5 999 руб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row row">
+                <div class="footer__top">
+                    <div class="footer__top-info">
+                        <div class="subtitle">быстрая доставка</div>
+                        <div class="content">Бесплатная доставка при покупке
+                           <br> от 5000 рублей в течении 2-3 дней
+                        </div>
+                    </div>
+                    <div class="footer__top-line"></div>
+                    <div class="footer__top-info">
+                        <div class="subtitle">обмен товара</div>
+                        <div class="content">Вы можете обменять товар в течении
+                           <br> 14 дней, если он вам не подошел
+                        </div>
+                    </div>
+                    <div class="footer__top-line"></div>
+                    <div class="footer__top-info">
+                        <div class="subtitle">безопасная оплата</div>
+                        <div class="content">Мы защищаем ваши онлайн платежи
+                           <br> и персональные данные
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__middle">
+                    <div class="footer__middle-logo footer__catalog-logo">
+                        <a href="#"><img src="image/footer__logo.png" alt=""></a>
+                        <div class="footer__middle-info content">Тюрин а. ИНН 667412365696</div>
+                        <div class="footer__middle-info content">ОГРНИП 317665802140691</div>
+                    </div>
+                    <div class="footer__nav footer__catalog-nav">
+                        <ul class="footer__nav-block">
+                            <li><a href="#" class="footer__nav-item menu-item">КАТАЛОГ</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">коллекции</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">купальники</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">платья </a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">аксессуары</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">сертификаты</a></li>
+                        </ul>
+                        <ul class="footer__nav-block">
+                            <li><a href="#" class="footer__nav-item menu-item">ПОКУПАТЕЛЯМ</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">доставка и оплата</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">обемн и возврат</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">отмена заказа</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">размерные сетки</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">Faq</a></li>
+                        </ul>
+                        <ul class="footer__nav-block">
+                            <li><a href="#" class="footer__nav-item menu-item">КОМПАНИЯ</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">о бренде</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">магазины</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">блог</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">контакты</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">партнерство</a></li>
+                        </ul>
+                        <ul class="footer__nav-block">
+                            <li><a href="#" class="footer__nav-item menu-item">СВЯЗАТЬСЯ С НАМИ</a></li>
+                            <li><a href="mailto:support@tyurin.com" class="footer__nav-item menu-item">support@tyurin.com</a></li>
+                            <li><a href="tel:+74995555000" class="footer__nav-item menu-item">+7 499 555 50 00</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">telegram</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">контакты</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">whats app</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__middle-email">
+                        <div class="content footer__middle-subtitle">подписаться на e-mail рассылку</div>
+                        <form class="footer__middle-form" action="#">
+                            <input type="text" placeholder="e-mail">
+                            <button type="submit" class="footer__middle-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="content footer__middle-text">Я ознакомлен(-а) и согласен(-а) с <span>политикой конфиденциальности</span></div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="content footer__bottom-law">©Tyurin 2023. Все права защищены.</div>
+                    <div class="footer__bottom-payments">
+                        <a href="#"><img src="image/mastercard.png.png" alt=""></a>
+                        <a href="#"><img src="image/visa.png.png" alt=""></a>
+                        <a href="#"><img src="image/mir.png.png" alt=""></a>
+                    </div>
+                    <div class="footer__bottom-policy">
+                        <a href="#" class="content">Политика обработки данных</a>
+                        <a href="#" class="content">договор-оферта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

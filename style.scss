@@ -33,6 +33,10 @@ body {
     font-family: 'Inter Tight';
     font-weight: 400;
     background: #F5EDED;
+
+    &.active {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -58,6 +62,7 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 button {
@@ -65,6 +70,7 @@ button {
     border: none;
     cursor: pointer;
     background-color: transparent;
+    font-family: inherit;
 }
 
 ::-webkit-input-placeholder {
@@ -172,7 +178,33 @@ button {
     left: 0;
     top: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 5;
+
+    &.active {
+        background: #F5EDED;
+
+        & .header__logo {
+            & img:first-child {
+                display: none;
+            }
+
+            & img:last-child {
+                display: block;
+            }
+        }
+
+        & .header__menu-item {
+            color: #222;
+        }
+
+        & .header__svg {
+            & svg {
+                & path {
+                    fill: #222;
+                }
+            }
+        }
+    }
 
     &:hover {
         background: #F5EDED;
@@ -208,7 +240,6 @@ button {
         display: flex;
         padding: 20px 0;
         align-items: center;
-        justify-content: space-between;
     }
 
     &__logo {
@@ -219,23 +250,30 @@ button {
         }
     }
 
+    &__nav {
+        margin-left: 585px;
+    }
+
     &__menu {
         display: flex;
         gap: 40px;
 
         & li {
-            max-height: 16.8px;
+            font-size: 14px;
         }
     }
 
     &__svg {
         display: flex;
         gap: 24px;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     &__catalog {
         display: none;
         flex-direction: column;
+        z-index: 5;
 
         &.active {
             display: flex;
@@ -285,6 +323,22 @@ button {
                     font-weight: 400;
                 }
             }
+        }
+    }
+
+    &__opacity {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        background-color: #222;
+        opacity: .8;
+        display: none;
+
+        &.active {
+            display: flex;
         }
     }
 }
@@ -462,7 +516,7 @@ button {
             gap: 12px;
 
             & li {
-                max-height: 16.8px;
+                font-size: 14px;
             }
 
             & li:first-child {
@@ -475,6 +529,18 @@ button {
                     font-weight: 400;
                 }
             }
+        }
+    }
+
+    &__catalog {
+        &-logo {
+            margin-right: 187px;
+        }
+
+        &-nav {
+            max-width: 852px;
+            gap: 116px;
+            justify-content: baseline;
         }
     }
 }
@@ -496,6 +562,7 @@ button {
         align-items: flex-end;
         justify-content: center;
         padding-bottom: 40px;
+        box-sizing: border-box;
     }
 
     &__main {
@@ -697,6 +764,11 @@ button {
         gap: 16px;
         justify-content: center;
 
+        & video {
+            max-height: 720px;
+            min-width: 600px;
+        }
+
         &-content {
             display: flex;
             flex-direction: column;
@@ -713,6 +785,55 @@ button {
             font-size: 12px;
             opacity: 0.4;
         }
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-row {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+
+        &-block {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    }
+
+    &__catalog {
+        &-row {
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
+
+        &-item {
+            margin-bottom: 40px;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+
+        &-right {
+            max-width: 1200px;
+            width: 100%;
+
+            & video {
+                max-height: 1554px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__row-2 {
+        padding-bottom: 80px;
+        padding-top: 0;
     }
 }
 
@@ -766,6 +887,16 @@ button {
         left: 0;
         max-height: 1200px;
         z-index: -1;
+    }
+
+    &__catalog {
+        &-row {
+            min-height: 790px;
+        }
+
+        &-content {
+            margin-bottom: 16px;
+        }
     }
 }
 

@@ -118,6 +118,20 @@ button {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  position: relative;
+}
+.menu-item::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #222;
+  content: "";
+  transition: width 0.5s ease-out;
+}
+.menu-item:hover::after, .menu-item:focus::after {
+  width: 100%;
 }
 
 .title {
@@ -158,8 +172,28 @@ button {
   left: 0;
   top: 0;
   width: 100vw;
+  z-index: 1;
+}
+.header:hover {
+  background: #F5EDED;
+}
+.header:hover .header__logo img:first-child {
+  display: none;
+}
+.header:hover .header__logo img:last-child {
+  display: block;
+}
+.header:hover .header__menu-item {
+  color: #222;
+}
+.header:hover .header__svg svg path {
+  fill: #222;
 }
 .header__row {
+  flex-direction: column;
+}
+.header__top {
+  display: flex;
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
@@ -167,13 +201,64 @@ button {
 .header__logo {
   margin-top: 10px;
 }
+.header__logo img:last-child {
+  display: none;
+}
 .header__menu {
   display: flex;
   gap: 40px;
 }
+.header__menu li {
+  max-height: 16.8px;
+}
 .header__svg {
   display: flex;
   gap: 24px;
+}
+.header__catalog {
+  display: none;
+  flex-direction: column;
+}
+.header__catalog.active {
+  display: flex;
+}
+.header__catalog-line {
+  background: #DED6D6;
+  height: 1px;
+  width: 100vw;
+  left: -50vw;
+  margin-left: 50%;
+  position: relative;
+}
+.header__catalog-content {
+  display: flex;
+  padding: 40px 0;
+}
+.header__catalog-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: 165px;
+}
+.header__catalog-item {
+  color: #222;
+}
+.header__catalog-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header__catalog-menu li {
+  max-height: 16.8px;
+}
+.header__catalog-menu li:first-child {
+  margin-bottom: 4px;
+  max-height: 15.2px;
+}
+.header__catalog-menu li:first-child a {
+  font-size: 12px;
+  opacity: 0.4;
+  font-weight: 400;
 }
 
 .footer {
@@ -318,8 +403,7 @@ button {
   display: flex;
 }
 .footer__nav-item {
-  font-weight: 500;
-  text-transform: uppercase;
+  color: #222;
 }
 .footer__nav-block {
   display: flex;
@@ -336,6 +420,7 @@ button {
 .footer__nav-block li:first-child a {
   font-size: 12px;
   opacity: 0.4;
+  font-weight: 400;
 }
 
 .video {

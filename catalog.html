@@ -73,6 +73,9 @@
         </div>
     </header>
     <main class="main">
+        <div class="header__opacity">
+            
+        </div>
         <div class="arrival">
             <div class="arrival__row row arrival__catalog-row">
                 <div class="video__gradient"></div>
@@ -203,6 +206,288 @@
                 </div>
             </div>
         </div>
+        <div class="filters">
+            <div class="filters__top">
+                <div class="subtitle filters__title">фильтры</div>
+                <button class="filters__close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M3.2513 18.332L10.7996 10.7634C11.2173 10.3309 11.2173 9.6533 10.7996 9.2208C10.3674 8.78831 9.6904 8.78831 9.25825 9.20639L1.69556 16.7606C2.1133 17.1787 3.29447 18.3753 3.2513 18.332ZM16.8209 1.68092L9.25825 9.23522C8.8261 9.6533 8.8261 10.3309 9.25825 10.7634C9.676 11.1814 10.353 11.1814 10.7852 10.749L18.3334 3.18024C17.9013 2.74774 16.8209 1.68092 16.8209 1.68092ZM10.7852 9.23522L3.22249 1.6665C2.79034 2.08458 1.66675 3.18024 1.66675 3.18024L9.21504 10.7345C9.63278 11.1526 10.3098 11.1526 10.742 10.7345C11.1597 10.302 11.1597 9.62447 10.742 9.19197L10.7852 9.23522ZM9.24385 10.7634L16.7921 18.3176C16.7921 18.3176 17.8869 17.1931 18.319 16.775L10.7564 9.20639C10.3242 8.77389 9.64719 8.77389 9.21504 9.20639C8.78289 9.62446 8.78289 10.302 9.21504 10.7345L9.24385 10.7634Z" fill="#111214"/>
+                </svg></button>
+            </div>
+            <div class="filters__sort filters__section">
+                <div class="filters__section-title filters__sort-open">
+                    <div class="filters__section-name" style="color: #222;">Сортировать</div>
+                    <button class="filters__sort-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__sort-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Самые популярные</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">От дорогих к дешевым</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">От дешовых к дорогим</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__category filters__section">
+                <div class="filters__section-title filters__category-open">
+                    <div class="filters__section-name" style="color: #222;">Категория</div>
+                    <button class="filters__category-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__category-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Купальники (12)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Платья (6)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Аксессуары (4)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__collection filters__section">
+                <div class="filters__section-title filters__collection-open">
+                    <div class="filters__section-name" style="color: #222;">
+                        Категория
+                        <span class="filters__collection-name">1</span>
+                    </div>
+                    <button class="filters__collection-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__collection-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Тайны Ривьера (12)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Шарм Венеции (6)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Золотой Век (4)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__color filters__section">
+                <div class="filters__section-title filters__color-open">
+                    <div class="filters__section-name" style="color: #222;">
+                        цвета
+                    </div>
+                    <button class="filters__color-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__color-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Черный (6)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Белый (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Бежевый (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Розовый (1)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Красный (2)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__size filters__section">
+                <div class="filters__section-title filters__size-open">
+                    <div class="filters__section-name" style="color: #222;">
+                        размеры
+                    </div>
+                    <button class="filters__size-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__size-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">XS (6)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">S (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">M (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">L (1)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">XL (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">S-90 (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">XS-85 (1)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">M-95 (1)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">L-100 (2)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">XL-105 (2)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__availability filters__section">
+                <div class="filters__section-title filters__availability-open">
+                    <div class="filters__section-name" style="color: #222;">Доступность</div>
+                    <button class="filters__availability-open"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                        <g clip-path="url(#clip0_631_7097)">
+                          <path d="M12 6.32258L11.3763 5.69678L6 11.0555L0.623745 5.69678L-2.73549e-08 6.32258L6 12.3031L12 6.32258Z" fill="#222222"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_631_7097">
+                            <rect width="14" height="12" fill="white" transform="translate(12 0.5) rotate(90)"/>
+                          </clipPath>
+                        </defs>
+                    </svg></button>
+                </div>
+                <ul class="filters__section-menu filters__availability-menu">
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">В наличии (6)</div>
+                    </li>
+                    <li class="filters__section-item">
+                        <form action="#">
+                            <input type="checkbox">
+                        </form>
+                        <div class="content">Под заказ (2)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filters__bottom">
+                <button class="filters__button">
+                    <div class="content">Применить</div>
+                </button>
+                <button class="filters__button">
+                    <div class="content">ОЧИСТИТЬ ФИЛЬТРЫ</div>
+                </button>
+            </div>
+        </div>
+        <div class="filters__opacity"></div>
     </main>
     <footer class="footer">
         <div class="container">

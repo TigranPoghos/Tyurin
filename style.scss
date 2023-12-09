@@ -1128,6 +1128,12 @@ button {
                 display: flex;
             }
         }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__category {
@@ -1136,6 +1142,12 @@ button {
 
             &.active {
                 display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }
@@ -1162,6 +1174,12 @@ button {
                 display: flex;
             }
         }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__color {
@@ -1170,6 +1188,12 @@ button {
 
             &.active {
                 display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }
@@ -1182,6 +1206,12 @@ button {
                 display: flex;
             }
         }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__availability {
@@ -1190,6 +1220,12 @@ button {
 
             &.active {
                 display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }
@@ -1219,6 +1255,163 @@ button {
                 color: #FFF;
                 font-weight: 500;
                 line-height: normal;
+            }
+        }
+    }
+}
+
+.product {
+    &__row {
+        padding-top: 86px;
+        padding-bottom: 120px;
+    }
+
+    &__left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        & video {
+            max-height: 1200px;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        padding: 211px 270px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    &__color {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        align-items: center;
+
+        &-name {
+            line-height: normal;
+            font-size: 12px;
+            opacity: .4;
+            flex-basis: 41px;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        &-black {
+            max-width: 14px;
+            max-height: 14px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        &-red {
+            max-width: 14px;
+            max-height: 14px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    }
+    
+    &__size {
+        display: flex;
+        margin-bottom: 40px;
+
+        & div:nth-child(n+3) {
+            margin-left: 12px;
+        }
+
+        & button {
+            margin-left: 12px;
+            line-height: normal;
+            text-decoration: underline;
+            font-size: 10px;
+            opacity: .4;
+            padding-top: 2px;
+            padding-bottom: 4px;
+            box-sizing: border-box;
+        }
+    }
+
+    &__buy {
+        justify-content: center;
+        color: #FFF;
+        background-color: #222;
+        padding: 12.5px 134px;
+        margin-bottom: 40px;
+    }
+
+    &__info {
+        border-top: 1px solid #DEDAD6;
+
+        &-menu {
+            line-height: 140%;
+            padding-bottom: 24px;
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__material {
+        &-menu {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__pay {
+        &-menu {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__back {
+        &-menu {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-svg {
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }

@@ -39,10 +39,10 @@
                             <path d="M5.5 15.4988V19.4988H18V15.4988L14.0956 14.2494L15.5873 13.2366L19.5 14.4988V20.9988H4V14.4988L7.91974 13.2344L9.38981 14.2541L5.5 15.4988Z" fill="white"/>
                             <path d="M11.75 13.5C13 13.5 16.5 11.37 16.5 8.75C16.5 6.12 14.37 4 11.75 4C9.12 4 7 6.12 7 8.75C7 11.37 10.5 13.5 11.75 13.5ZM11.75 12C10.5 12 8.5 10.54 8.5 8.75C8.5 6.95 9.95 5.5 11.75 5.5C13.54 5.5 15 6.95 15 8.75C15 10.54 13 12 11.75 12Z" fill="white"/>
                         </svg></a>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <button class="basket__button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M18.5002 8.5L19.0004 20H5.50024L6.00004 8.5H18.5002ZM20.0002 7H4.5004L4 21.47L20.5004 21.5L20.0002 7Z" fill="white"/>
                             <path d="M15.1934 4.75C15.1934 3.23 13.9534 2 12.4434 2C10.9234 2 9.69336 3.23 9.69336 4.75V5.5H11.1934V4.75C11.1934 4.05 11.7434 3.5 12.4434 3.5C13.1334 3.5 13.6934 4.05 13.6934 4.75V5.5H15.1934V4.75Z" fill="white"/>
-                        </svg></a>
+                        </svg></button>
                     </div>
                 </div>
                 <div class="header__catalog">
@@ -73,6 +73,97 @@
         </div>
     </header>
     <main class="main">
+        <div class="basket__opacity"></div>
+        <div class="basket">
+            <div class="basket__top">
+                <div class="subtitle">корзина (2)</div>
+                <button class="basket__close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M3.25154 18.332L10.7998 10.7634C11.2176 10.3309 11.2176 9.6533 10.7998 9.2208C10.3677 8.78831 9.69065 8.78831 9.2585 9.20639L1.6958 16.7606C2.11355 17.1787 3.29472 18.3753 3.25154 18.332ZM16.8211 1.68092L9.2585 9.23522C8.82634 9.6533 8.82634 10.3309 9.2585 10.7634C9.67624 11.1814 10.3533 11.1814 10.7854 10.749L18.3337 3.18024C17.9015 2.74774 16.8211 1.68092 16.8211 1.68092ZM10.7854 9.23522L3.22273 1.6665C2.79058 2.08458 1.66699 3.18024 1.66699 3.18024L9.21528 10.7345C9.63303 11.1526 10.3101 11.1526 10.7422 10.7345C11.16 10.302 11.16 9.62447 10.7422 9.19197L10.7854 9.23522ZM9.24409 10.7634L16.7923 18.3176C16.7923 18.3176 17.8871 17.1931 18.3193 16.775L10.7566 9.20639C10.3245 8.77389 9.64743 8.77389 9.21528 9.20639C8.78313 9.62446 8.78313 10.302 9.21528 10.7345L9.24409 10.7634Z" fill="#111214"/>
+                </svg></button>
+            </div>
+            <div class="basket__product">
+                <div class="basket__product-left">
+                    <img src="image/basket__product-1.jpg" alt="">
+                </div>
+                <div class="basket__product-right">
+                    <div class="filters__section-name">
+                        Красный бикини-топ крючком
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                            <path d="M0.760585 8.49945L4.38376 4.8665C4.58428 4.6589 4.58428 4.33366 4.38376 4.12606C4.17633 3.91847 3.85135 3.91847 3.64392 4.11914L0.0138291 7.74518C0.214347 7.94586 0.781308 8.52021 0.760585 8.49945ZM7.27399 0.50692L3.64392 4.13298C3.43649 4.33366 3.43649 4.6589 3.64392 4.8665C3.84444 5.06717 4.16942 5.06717 4.37685 4.85958L8 1.22659C7.79257 1.01899 7.27399 0.50692 7.27399 0.50692ZM4.37685 4.13298L0.746757 0.5C0.539324 0.700678 0 1.22659 0 1.22659L3.62318 4.85266C3.8237 5.05333 4.14867 5.05333 4.35611 4.85266C4.55662 4.64506 4.55662 4.31982 4.35611 4.11222L4.37685 4.13298ZM3.63701 4.8665L7.26016 8.49253C7.26016 8.49253 7.78565 7.95278 7.99309 7.7521L4.36302 4.11914C4.15559 3.91155 3.83061 3.91155 3.62318 4.11914C3.41575 4.31982 3.41575 4.64506 3.62318 4.85266L3.63701 4.8665Z" fill="#111214"/>
+                        </svg></button>
+                    </div>
+                    <div class="content">5 999 руб</div>
+                    <div class="basket__product-color">
+                        <div class="content">Цвет</div>
+                        <div class="content">Красный</div>
+                    </div>
+                    <div class="basket__product-size">
+                        <div class="content">Размер</div>
+                        <div class="content">XS</div>
+                    </div>
+                    <div class="quantity_inner">        
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="1" viewBox="0 0 6 1" fill="none">
+                                <path d="M6 0V1H0V0H6Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <path d="M2.49091 6V0H3.50909V6H2.49091ZM0 3.50909V2.49091H6V3.50909H0Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__product">
+                <div class="basket__product-left">
+                    <img src="image/basket__product-2.jpg" alt="">
+                </div>
+                <div class="basket__product-right">
+                    <div class="filters__section-name">
+                        Красные плавки бикини с цветочным принтом
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+                            <path d="M0.760585 8.49945L4.38376 4.8665C4.58428 4.6589 4.58428 4.33366 4.38376 4.12606C4.17633 3.91847 3.85135 3.91847 3.64392 4.11914L0.0138291 7.74518C0.214347 7.94586 0.781308 8.52021 0.760585 8.49945ZM7.27399 0.50692L3.64392 4.13298C3.43649 4.33366 3.43649 4.6589 3.64392 4.8665C3.84444 5.06717 4.16942 5.06717 4.37685 4.85958L8 1.22659C7.79257 1.01899 7.27399 0.50692 7.27399 0.50692ZM4.37685 4.13298L0.746757 0.5C0.539324 0.700678 0 1.22659 0 1.22659L3.62318 4.85266C3.8237 5.05333 4.14867 5.05333 4.35611 4.85266C4.55662 4.64506 4.55662 4.31982 4.35611 4.11222L4.37685 4.13298ZM3.63701 4.8665L7.26016 8.49253C7.26016 8.49253 7.78565 7.95278 7.99309 7.7521L4.36302 4.11914C4.15559 3.91155 3.83061 3.91155 3.62318 4.11914C3.41575 4.31982 3.41575 4.64506 3.62318 4.85266L3.63701 4.8665Z" fill="#111214"/>
+                        </svg></button>
+                    </div>
+                    <div class="content">5 999 руб</div>
+                    <div class="basket__product-color">
+                        <div class="content">Цвет</div>
+                        <div class="content">Красный</div>
+                    </div>
+                    <div class="basket__product-size">
+                        <div class="content">Размер</div>
+                        <div class="content">XS</div>
+                    </div>
+                    <div class="quantity_inner">        
+                        <button class="bt_minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="1" viewBox="0 0 6 1" fill="none">
+                                <path d="M6 0V1H0V0H6Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
+                        <button class="bt_plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                <path d="M2.49091 6V0H3.50909V6H2.49091ZM0 3.50909V2.49091H6V3.50909H0Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__sum">
+                <div class="filters__section-name">Общая сумма</div>
+                <div class="content">11 998 руб</div>
+            </div>
+            <div class="filters__bottom">
+                <button class="filters__button">
+                    <div class="content">оформить заказ</div>
+                </button>
+                <button class="filters__button">
+                    <div class="content">ПЕРЕЙТИ В КОРЗИНУ</div>
+                </button>
+            </div>
+        </div>
         <div class="header__opacity">
             
         </div>

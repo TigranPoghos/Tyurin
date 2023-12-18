@@ -235,6 +235,7 @@ button {
   top: 0;
   width: 100%;
   z-index: 5;
+  box-sizing: border-box;
 }
 .header.active {
   background: #F5EDED;
@@ -268,6 +269,7 @@ button {
 }
 .header:hover {
   background: #F5EDED;
+  border-bottom: 1px solid #DED6D6;
 }
 .header:hover .header__logo img:first-child {
   display: none;
@@ -1336,4 +1338,83 @@ button {
 }
 .basket .filters__bottom {
   margin-top: 0;
+}
+
+.login__row {
+  padding-top: 87px;
+  justify-content: space-between;
+}
+.login__left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__left-block {
+  text-align: center;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.login__left-content {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-width: 460px;
+}
+.login__left-log {
+  margin-bottom: 24px;
+}
+.login__left-log span {
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.login__left form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.login__left form input {
+  padding: 16.5px 24px;
+  box-sizing: border-box;
+  border: 1px solid #DED6D6;
+}
+.login__left form input:focus {
+  outline: none;
+  color: #222;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.login__left form button {
+  padding: 15.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  background: #222;
+}
+.login__left-forget {
+  color: #222;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-top: 24px;
+}
+.login__right {
+  width: 50%;
 }

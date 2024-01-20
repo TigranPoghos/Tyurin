@@ -167,33 +167,124 @@
         <div class="header__opacity">
 
         </div>
+        <div class="checkout">
+            <div class="container">
+                <div class="checkout__row row">
+                    <div class="checkout__left">
+                        <div class="checkout__contact">
+                            <div class="checkout__contact-title">
+                                <div class="checkout__contact-ellipse">1</div>
+                                <svg class="checkout__contact-ready" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#4E8820"/>
+                                    <path d="M8.07986 12.1004L7.11328 13.058L10.3292 16.2742L17.1133 9.50766L16.1467 8.54102L10.3201 14.3409L8.07986 12.1004Z" fill="white"/>
+                                </svg>
+                                <div class="subtitle">контактные данные</div>
+                            </div>
+                            <form action="#" class="checkout__contact-info">
+                                <input type="text" placeholder="Имя*" class="checkout__contact-information">
+                                <input type="text" placeholder="Фамилия*" class="checkout__contact-information">
+                                <input type="text" placeholder="Телефон*" class="checkout__contact-information">
+                                <input type="text" placeholder="E-mail*" class="checkout__contact-information">
+                                <div class="checkout__contact-news">
+                                    <input type="checkbox" class="checkout__contact-checkbox">
+                                    <span>Я хочу получать новостную рассылку об эксклюзивных предпродажах, новых коллекциях и мероприятиях в магазинах.</span>
+                                </div>
+                                <button type="submit" class="checkout__contact-button contactJsButton">продолжить</button>
+                            </form>
+                        </div>
+                        <div class="checkout__delivery">
+                            <div class="checkout__delivery-title">
+                                <div class="checkout__delivery-ellipse">2</div>
+                                <svg class="checkout__delivery-ready" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#4E8820"/>
+                                    <path d="M8.07986 12.1004L7.11328 13.058L10.3292 16.2742L17.1133 9.50766L16.1467 8.54102L10.3201 14.3409L8.07986 12.1004Z" fill="white"/>
+                                </svg>
+                                <div class="subtitle">доставка</div>
+                            </div>
+                            <form action="#" class="checkout__delivery-info">
+                                <div class="checkout__delivery-way">
+                                    <input type="radio" name="delivery">
+                                    <span>курьерская доставка</span>
+                                    <input type="radio" name="delivery">
+                                    <span>Самовывоз</span>
+                                </div>
+                                <div class="checkout__delivery-address">
+                                    <input type="text" placeholder="Населенный пункт*" class="checkout__delivery-information">
+                                    <input type="text" placeholder="Адрес доставки*" class="checkout__delivery-information">
+                                </div>
+                                <input type="text" placeholder="Комментарии курьеру*" class="checkout__delivery-comment">
+                                <span class="checkout__delivery-exactly">Подъезд, домофон, этаж. Мы сохраним эти данные для следующих заказов.</span>
+                                <button type="submit" class="checkout__contact-button deliveryJsButton">продолжить</button>
+                            </form>
+                        </div>
+                        <div class="checkout__pay">
+                            <div class="checkout__pay-title">
+                                <div class="checkout__pay-ellipse">3</div>
+                                <svg class="checkout__pay-ready" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="12" fill="#4E8820"/>
+                                    <path d="M8.07986 12.1004L7.11328 13.058L10.3292 16.2742L17.1133 9.50766L16.1467 8.54102L10.3201 14.3409L8.07986 12.1004Z" fill="white"/>
+                                </svg>
+                                <div class="subtitle">оплата</div>
+                            </div>
+                            <form action="#" class="checkout__pay-info">
+                                <div class="checkout__pay-method checkout__pay-first">
+                                    <input type="radio" name="pay" class="radioFirst">
+                                    <span class="checkout__pay-text">оплата при получении</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8 15.5H4.5C3.96957 15.5 3.46086 15.2893 3.08579 14.9142C2.71071 14.5391 2.5 14.0304 2.5 13.5V5.5C2.5 4.96957 2.71071 4.46086 3.08579 4.08579C3.46086 3.71071 3.96957 3.5 4.5 3.5H17.5C18.0304 3.5 18.5391 3.71071 18.9142 4.08579C19.2893 4.46086 19.5 4.96957 19.5 5.5V13.5M2.5 6.5H19.5M5 9.5H10M5 11.5H10M13 14.127C12.4752 13.7616 11.8603 13.5471 11.2221 13.5065C10.5839 13.466 9.94678 13.6011 9.37996 13.8972C8.81314 14.1932 8.33826 14.6389 8.00688 15.1858C7.67551 15.7328 7.50031 16.36 7.50031 16.9995C7.50031 17.639 7.67551 18.2662 8.00688 18.8132C8.33826 19.3601 8.81314 19.8058 9.37996 20.1018C9.94678 20.3979 10.5839 20.533 11.2221 20.4925C11.8603 20.452 12.4752 20.2374 13 19.872M17 14.127C16.4752 13.7616 15.8603 13.5471 15.2221 13.5065C14.5839 13.466 13.9468 13.6011 13.38 13.8972C12.8131 14.1932 12.3383 14.6389 12.0069 15.1858C11.6755 15.7328 11.5003 16.36 11.5003 16.9995C11.5003 17.639 11.6755 18.2662 12.0069 18.8132C12.3383 19.3601 12.8131 19.8058 13.38 20.1018C13.9468 20.3979 14.5839 20.533 15.2221 20.4925C15.8603 20.452 16.4752 20.2374 17 19.872M22.5 17C22.5 17.9283 22.1313 18.8185 21.4749 19.4749C20.8185 20.1313 19.9283 20.5 19 20.5C18.0717 20.5 17.1815 20.1313 16.5251 19.4749C15.8687 18.8185 15.5 17.9283 15.5 17C15.5 16.0717 15.8687 15.1815 16.5251 14.5251C17.1815 13.8687 18.0717 13.5 19 13.5C19.9283 13.5 20.8185 13.8687 21.4749 14.5251C22.1313 15.1815 22.5 16.0717 22.5 17Z" stroke="black"/>
+                                    </svg>
+                                </div>
+                                <div class="checkout__pay-method checkout__pay-second">
+                                    <input type="radio" name="pay" class="radioSecond">
+                                    <span class="checkout__pay-text">онлайн-оплата картой</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M2.5 8.5H21.5M5 12.5H11M5 14.5H11M4.5 19.5H19.5C20.0304 19.5 20.5391 19.2893 20.9142 18.9142C21.2893 18.5391 21.5 18.0304 21.5 17.5V6.5C21.5 5.96957 21.2893 5.46086 20.9142 5.08579C20.5391 4.71071 20.0304 4.5 19.5 4.5H4.5C3.96957 4.5 3.46086 4.71071 3.08579 5.08579C2.71071 5.46086 2.5 5.96957 2.5 6.5V17.5C2.5 18.0304 2.71071 18.5391 3.08579 18.9142C3.46086 19.2893 3.96957 19.5 4.5 19.5Z" stroke="black"/>
+                                    </svg>
+                                </div>
+                                <div class="checkout__pay-method checkout__pay-third">
+                                    <input type="radio" name="pay" class="radioThird">
+                                    <span class="checkout__pay-text">СПБ онлайн</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_631_10200)">
+                                          <mask id="mask0_631_10200" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                            <path d="M24 0H0V24H24V0Z" fill="white"/>
+                                          </mask>
+                                          <g mask="url(#mask0_631_10200)">
+                                            <path d="M2 5.22412L4.9064 10.4191V13.5879L2.0034 18.7727L2 5.22412Z" fill="#5B57A2"/>
+                                            <path d="M13.1562 8.52889L15.8796 6.85969L21.4532 6.85449L13.1562 11.9373V8.52889Z" fill="#D90751"/>
+                                            <path d="M13.1478 5.1934L13.1632 12.0714L10.25 10.2814V0L13.1478 5.1934Z" fill="#FAB718"/>
+                                            <path d="M21.4602 6.8542L15.8864 6.8594L13.1478 5.1934L10.25 0L21.4602 6.8542Z" fill="#ED6F26"/>
+                                            <path d="M13.1632 18.8015V15.4645L10.25 13.7085L10.2516 24.0001L13.1632 18.8015Z" fill="#63B22F"/>
+                                            <path d="M15.876 17.1475L4.9062 10.4191L2 5.22412L21.4446 17.1407L15.876 17.1475Z" fill="#1487C9"/>
+                                            <path d="M10.25 24L13.1612 18.8014L15.8778 17.1474L21.4464 17.1406L10.25 24Z" fill="#017F36"/>
+                                            <path d="M2 18.7726L10.2666 13.7086L7.4874 12.0034L4.903 13.5878L2 18.7726Z" fill="#984995"/>
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_631_10200">
+                                            <rect width="24" height="24" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <button type="submit" class="checkout__contact-button payJsButton">продолжить</button>
+                            </form>
+                            <span class="checkout__pay-contract">Нажимая на кнопку «Оформить заказ», вы принимаете условия &nbsp; <a href="#">ДОГОВОР-ОФЕРТА</a></span>
+                        </div>
+                    </div>
+                    <div class="checkout__right">
+                        <div class="checkout__right-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__row row">
-                <div class="footer__top">
-                    <div class="footer__top-info">
-                        <div class="subtitle">быстрая доставка</div>
-                        <div class="content">Бесплатная доставка при покупке
-                           <br> от 5000 рублей в течении 2-3 дней
-                        </div>
-                    </div>
-                    <div class="footer__top-line"></div>
-                    <div class="footer__top-info">
-                        <div class="subtitle">обмен товара</div>
-                        <div class="content">Вы можете обменять товар в течении
-                           <br> 14 дней, если он вам не подошел
-                        </div>
-                    </div>
-                    <div class="footer__top-line"></div>
-                    <div class="footer__top-info">
-                        <div class="subtitle">безопасная оплата</div>
-                        <div class="content">Мы защищаем ваши онлайн платежи
-                           <br> и персональные данные
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__middle">
+                <div class="footer__middle footer__middle-Basket"">
                     <div class="footer__middle-logo">
                         <a href="#"><img src="image/footer__logo.png" alt=""></a>
                         <div class="footer__middle-info content">Тюрин а. ИНН 667412365696</div>

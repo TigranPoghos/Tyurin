@@ -314,6 +314,69 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    //заполнение данных для оплаты
+    const contactJsButton = document.querySelector('.contactJsButton')
+    const checkout__delivery = document.querySelector('.checkout__delivery')
+    const checkout__pay = document.querySelector('.checkout__pay')
+    const checkout__contact = document.querySelector('.checkout__contact')
+    const deliveryJsButton = document.querySelector('.deliveryJsButton')
+    const payJsButton = document.querySelector('.payJsButton')
+
+    contactJsButton?.addEventListener('click', function (){
+        checkout__contact?.classList.add('active')
+        checkout__delivery?.classList.add('active')
+    })
+
+    deliveryJsButton?.addEventListener('click', function (){
+        checkout__delivery?.classList.add('activeReady')
+        checkout__delivery?.classList.remove('active')
+        checkout__pay?.classList.add('active')
+    })
+
+    payJsButton?.addEventListener('click', function (){
+        checkout__pay?.classList.add('activeReady')
+        checkout__pay?.classList.remove('active')
+    })
+
+
+
+
+
+
+
+
+
+    //метод оплаты
+    const checkout__payFirst = document.querySelector('.checkout__pay-first')
+    const checkout__paySecond = document.querySelector('.checkout__pay-second')
+    const checkout__payThird = document.querySelector('.checkout__pay-third')
+    const radioFirst = document.querySelector('.radioFirst')
+    const radioSecond = document.querySelector('.radioSecond')
+    const radioThird = document.querySelector('.radioThird')
+
+    radioFirst?.addEventListener('click', function() {
+        checkout__payFirst?.classList.add('active')
+        checkout__paySecond?.classList.remove('active')
+        checkout__payThird?.classList.remove('active')
+    })
+
+    radioSecond?.addEventListener('click', function() {
+        checkout__payFirst?.classList.remove('active')
+        checkout__paySecond?.classList.add('active')
+        checkout__payThird?.classList.remove('active')
+    })
+
+    radioThird?.addEventListener('click', function () {
+        checkout__payFirst?.classList.remove('active')
+        checkout__paySecond?.classList.remove('active')
+        checkout__payThird?.classList.add('active')
+    })
+    
+
+
+
+
+
 
 
 

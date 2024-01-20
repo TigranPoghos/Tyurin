@@ -38,7 +38,11 @@ body {
         overflow: hidden;
     }
 
-    &.activeBacket {
+    &.activeBasket {
+        overflow: hidden;
+    }
+
+    &.activeFilters {
         overflow: hidden;
     }
 }
@@ -126,18 +130,17 @@ button {
     border-radius: 1px;
     border: 1px solid #DEDAD6;  
     max-width: 82px;
-    padding: 10px 13px 9px 12px;
+    padding: 6px 0;
     justify-content: center;
     align-items: center;
-    gap: 19px;
     box-sizing: border-box;
 }        
 .quantity_inner .bt_minus,
 .quantity_inner .bt_plus{
     color: #222;
     height: 16px;
-    width: 6px;
-    padding: 0;
+    width: 10px;
+    padding: 0 2px;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -156,7 +159,7 @@ button {
     line-height: normal;
     padding: 0;
     border: none;
-    max-width: 7px;
+    max-width: 45px;
 }
 .quantity_inner .bt_minus svg,
 .quantity_inner .bt_plus svg {
@@ -199,7 +202,7 @@ button {
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    line-height: 75%;
 }
 
 .subtitle {
@@ -207,7 +210,7 @@ button {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 110%;
+    line-height: 75%;
     text-transform: uppercase;
 }
 
@@ -233,6 +236,33 @@ button {
     width: 100%;
     z-index: 5;
     box-sizing: border-box;
+
+    &__fon {
+        background: #F5EDED;
+        border-bottom: 1px solid #DED6D6;
+
+        & .header__logo {
+            & img:first-child {
+                display: none;
+            }
+
+            & img:last-child {
+                display: block;
+            }
+        }
+
+        & .header__menu-item {
+            color: #222;
+        }
+
+        & .header__svg {
+            & svg {
+                & path {
+                    fill: #222;
+                }
+            }
+        }
+    }
 
     &.active {
         background: #F5EDED;
@@ -427,12 +457,16 @@ button {
 .footer {
     flex: 0 0 auto;
 
+    &__container {
+        padding: 0;
+    }
+
     &__row {
         flex-direction: column;
     }
 
     &__top {
-        padding: 40px 155px;
+        padding: 40px 195px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -456,9 +490,13 @@ button {
     }
 
     &__middle {
-        padding: 40px 0;
+        padding: 40px;
         display: flex;
         border-bottom: 1px solid #DEDAD6;
+
+        &-Basket {
+            border-top: 1px solid #DEDAD6;
+        }
 
         &-logo {
             display: flex;
@@ -541,7 +579,7 @@ button {
 
     &__bottom {
         display: flex;
-        padding: 20px 0;
+        padding: 20px 40px;
         align-items: center;
 
         &-law {
@@ -1326,6 +1364,7 @@ button {
         width: 100%;
         text-transform: uppercase;
         border: 1px solid #222;
+        text-align: center;
 
         &:hover {
             border: none;
@@ -1643,6 +1682,10 @@ button {
             width: 100%;
         }
 
+        &-create {
+            max-width: 600px;
+        }
+
         &-content {
             margin-top: 24px;
             margin-bottom: 16px;
@@ -1659,6 +1702,27 @@ button {
             }
         }
 
+        &-news {
+            display: flex;
+            gap: 8px;
+            margin: 8px 0;
+            text-align: start;
+
+            & input {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+            }
+
+            & div {
+                color: #222;
+                font-size: 12px;
+                font-style: normal;
+                line-height: normal;
+                max-width: 578px;
+            }
+        }
+
         & form {
             display: flex;
             flex-direction: column;
@@ -1666,7 +1730,7 @@ button {
             width: 100%;
 
             & input {
-                padding: 16.5px 24px;
+                padding: 15.2px 24px;
                 box-sizing: border-box;
                 border: 1px solid #DED6D6;
 
@@ -1681,7 +1745,7 @@ button {
                 }
             }
 
-            & button {
+            & a {
                 padding: 15.5px;
                 display: flex;
                 justify-content: center;
@@ -1712,4 +1776,151 @@ button {
     &__right {
         width: 50%;
     }
+}
+
+.Basket {
+    &__row {
+        padding-top: 86px;
+    }
+
+    &__left {
+        padding: 39px 40px 175px 0;
+        display: flex;
+        flex-direction: column;
+        width: 66.666%;
+        
+        &-title {
+            margin-bottom: 41px;
+        }
+    }
+
+    &__right {
+        width: 33.333%;
+        border-left: 1px solid #DED6D6;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            padding: 39px 0 39px 40px;
+        }
+
+        &-text {
+            color: #222;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            display: flex;
+
+            & span {
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+
+        &-sum {
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        &-result {
+            margin: 40px 0;
+        }
+
+        & .filters__bottom {
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+
+        &-line {
+            width: 100%;
+            height: 1px;
+            background: #DEDAD6;
+            margin-bottom: 44px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        gap: 12px;
+        margin: 0 6px 40px 2px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 520px;
+        }
+
+        &-more {
+            color: #222;
+            font-size: 12px;
+            font-style: normal;
+            line-height: normal;
+            text-decoration-line: underline;
+            opacity: .4;
+            max-width: 80px;
+        }
+    }
+
+    &__card {
+        border-top: 1px solid #DEDAD6;
+        padding: 40px 0;
+        width: 100%;
+        display: flex;
+
+        & img {
+            max-width: 224px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+        }
+
+        & .filters__section-name {
+            margin-bottom: 4px;
+        }
+
+        &-SizeColor {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            margin-bottom: 11px;
+
+            & div {
+                color: #222;
+                font-size: 12px;
+                font-style: normal;
+                line-height: normal;
+
+                & span {
+                    color: rgba(34, 34, 34, 0.40);
+                }
+            }
+        }
+
+        &-delete {
+            margin-top: auto;
+            margin-bottom: 0;
+            max-width: 107px;
+
+            & span {
+                color: rgba(34, 34, 34, 0.40);
+                font-size: 12px;
+                font-style: normal;
+                line-height: normal;
+            }
+
+            &Line {
+                background: #A19C9C;
+                width: 100%;
+                height: 1px;
+                margin-top: 1px;
+            }
+        }
+    }
+
 }

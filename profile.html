@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>TYURIN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
@@ -167,23 +167,39 @@
         <div class="header__opacity">
 
         </div>
-        <div class="login">
-            <div class="login__row row">
-                <div class="login__left">
-                    <div class="login__left-block">
-                        <div class="title" style="color: #222; font-size: 64px;">Log in</div>
-                        <div class="content login__left-content">Войди в личный кабнет, чтобы управляйть и отслеживать свои заказы, получать обновления и быть на связи со службой клиентов.</div>
-                        <div class="content login__left-log">У вас еще нет аккаунта? <a href="file:///F:/Tyurin/create.html#"><span class="content">ЗАРЕГИСТРИРОВАТЬСЯ</span></a></div>
+        <div class="profile">
+            <div class="container">
+                <div class="profile__row row">
+                    <div class="profile__left">
+                        <button class="profile__left-button active profileButton">
+                            <span class="profile__left-text">профиль</span>
+                        </button>
+                        <button class="profile__left-button profileButton">
+                            <span class="profile__left-text">история заказов</span>
+                        </button>
+                        <button class="profile__left-button profileButton">
+                            <span class="profile__left-text">адрес доставки</span>
+                        </button>
+                        <button class="profile__left-button profileButton">
+                            <span class="profile__left-text">служба поддержки клиентов</span>
+                        </button>
+                        <a href="file:///F:/Tyurin/login.html#"><div class="profile__left-exit">выйти</div></a>
+                    </div>
+                    <div class="profile__right">
+                        <span class="subtitle" style="margin-bottom: 12px;">Последние заказы</span>
+                        <span class="content">Вы еще не оформляли заказ</span>
+                        <a href="file:///F:/Tyurin/catalog.html?#" class="profile__right-shop">перейти в магазин</a>
+                        <div class="profile__right-line"></div>
+                        <div class="subtitle">Ваш профиль</div>
                         <form action="#">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Фамилия">
                             <input type="text" placeholder="Почта">
                             <input type="text" placeholder="Пароль">
-                            <a href="#">войти</a>
+                            <input type="text" placeholder="Телефон">
+                            <button type="submit">обновить профиль</button>
                         </form>
-                        <a href="#" class="login__left-forget">Забыли свой пароль?</a>
                     </div>
-                </div>
-                <div class="login__right">
-                    <img src="image/login.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -214,12 +230,12 @@
                     </div>
                 </div>
                 <div class="footer__middle">
-                    <div class="footer__middle-logo">
+                    <div class="footer__middle-logo footer__catalog-logo">
                         <a href="#"><img src="image/footer__logo.png" alt=""></a>
                         <div class="footer__middle-info content">Тюрин а. ИНН 667412365696</div>
                         <div class="footer__middle-info content">ОГРНИП 317665802140691</div>
                     </div>
-                    <div class="footer__nav">
+                    <div class="footer__nav footer__catalog-nav">
                         <ul class="footer__nav-block">
                             <li><a href="#" class="footer__nav-item menu-item">КАТАЛОГ</a></li>
                             <li><a href="#" class="footer__nav-item menu-item">коллекции</a></li>
@@ -243,6 +259,14 @@
                             <li><a href="#" class="footer__nav-item menu-item">блог</a></li>
                             <li><a href="#" class="footer__nav-item menu-item">контакты</a></li>
                             <li><a href="#" class="footer__nav-item menu-item">партнерство</a></li>
+                        </ul>
+                        <ul class="footer__nav-block">
+                            <li><a href="#" class="footer__nav-item menu-item">СВЯЗАТЬСЯ С НАМИ</a></li>
+                            <li><a href="mailto:support@tyurin.com" class="footer__nav-item menu-item">support@tyurin.com</a></li>
+                            <li><a href="tel:+74995555000" class="footer__nav-item menu-item">+7 499 555 50 00</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">telegram</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">контакты</a></li>
+                            <li><a href="#" class="footer__nav-item menu-item">whats app</a></li>
                         </ul>
                     </div>
                     <div class="footer__middle-email">

@@ -293,4 +293,39 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+    //информация
+    const infoButtons = document.querySelectorAll('.profileButton')
+    const infoSize = document.querySelector('.info__size')
+    const infoPay = document.querySelector('.info__pay')
+    const infoContact = document.querySelector('.info__contact')
+    infoPay?.classList.add('active')
+    infoButtons?.forEach((infoButton, index) => {
+        infoButton?.addEventListener('click', function() {
+            infoButtons?.forEach(otherButton => {
+                otherButton?.classList.remove('active')
+            })
+            infoButton?.classList.add('active')
+            if (index === 3) {
+                infoSize?.classList.add('active')
+            } else {
+                infoSize?.classList.remove('active')
+            }
+            if (index === 0) {
+                infoPay?.classList.add('active')
+            } else {
+                infoPay?.classList.remove('active')
+            }
+            if (index === 5) {
+                infoContact?.classList.add('active')
+            } else {
+                infoContact?.classList.remove('active')
+            }
+        })
+    })
+
+
+
+
+
 })

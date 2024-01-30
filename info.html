@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Info</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
@@ -167,38 +167,204 @@
         <div class="header__opacity">
 
         </div>
-        <div class="profile">
+        <div class="info">
             <div class="container">
-                <div class="profile__row row">
-                    <div class="profile__left">
-                        <button class="profile__left-button active profileButton">
-                            <span class="profile__left-text">профиль</span>
+                <div class="info__row row">
+                    <div class="info__left">
+                        <button class="info__left-button active profileButton">
+                            <span class="info__left-text">доставка и оплата</span>
                         </button>
-                        <button class="profile__left-button profileButton">
-                            <span class="profile__left-text">история заказов</span>
+                        <button class="info__left-button profileButton">
+                            <span class="info__left-text">обмен и возврат</span>
                         </button>
-                        <button class="profile__left-button profileButton">
-                            <span class="profile__left-text">адрес доставки</span>
+                        <button class="info__left-button profileButton">
+                            <span class="info__left-text">отмена заказа</span>
                         </button>
-                        <button class="profile__left-button profileButton">
-                            <span class="profile__left-text">служба поддержки клиентов</span>
+                        <button class="info__left-button profileButton">
+                            <span class="info__left-text">размерные сетки</span>
                         </button>
-                        <a href="file:///F:/Tyurin/login.html#"><div class="profile__left-exit">выйти</div></a>
+                        <button class="info__left-button profileButton">
+                            <span class="info__left-text">faq</span>
+                        </button>
+                        <button class="info__left-button profileButton">
+                            <span class="info__left-text">Связаться с нами</span>
+                        </button>
                     </div>
-                    <div class="profile__right">
-                        <span class="subtitle" style="margin-bottom: 12px;">Последние заказы</span>
-                        <span class="content">Вы еще не оформляли заказ</span>
-                        <a href="file:///F:/Tyurin/catalog.html?#" class="profile__right-shop">перейти в магазин</a>
-                        <div class="profile__right-line"></div>
-                        <div class="subtitle">Ваш профиль</div>
+                    <div class="info__size">
+                        <div class="subtitle">Размерные сетки</div>
+                        <div class="info__size-line"></div>
+                        <div class="info__size-froze">
+                            <div class="info__size-block">
+                                <span class="info__subtitle">Как сделать замеры</span>
+                                <ul class="content info__content">
+                                    <li style="list-style: disc; margin-bottom: 6px;">Измерьте самую полную часть вашей груди, не надевая бюстгальтер.</li>
+                                    <li style="list-style: disc; margin-bottom: 6px;">Измерьте в самой узкой части вашей талии.</li>
+                                    <li style="list-style: disc;">Измерьте окружность самой широкой части ваших бедер.</li>
+                                    <li><br>Убедитесь, что рулетка удобно натянута и не слишком туго сдавливает.</li>
+                                </ul>
+                            </div>
+                            <img src="image/info__froze.jpg" alt="">
+                        </div>
+                        <table class="info__size-table">
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-content">размеры в см</span></td>
+                                <td class="info__size-td"><span class="info__size-title">XS</span></td>
+                                <td class="info__size-td"><span class="info__size-title">S</span></td>
+                                <td class="info__size-td"><span class="info__size-title">M</span></td>
+                                <td class="info__size-td"><span class="info__size-title">L</span></td>
+                                <td class="info__size-td"><span class="info__size-title">XL</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">ГРУДЬ</span></td>
+                                <td class="info__size-td"><span class="info__size-content">80</span></td>
+                                <td class="info__size-td"><span class="info__size-content">84</span></td>
+                                <td class="info__size-td"><span class="info__size-content">88</span></td>
+                                <td class="info__size-td"><span class="info__size-content">92</span></td>
+                                <td class="info__size-td"><span class="info__size-content">96</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">ТАЛИЯ</span></td>
+                                <td class="info__size-td"><span class="info__size-content">62</span></td>
+                                <td class="info__size-td"><span class="info__size-content">65</span></td>
+                                <td class="info__size-td"><span class="info__size-content">68</span></td>
+                                <td class="info__size-td"><span class="info__size-content">74</span></td>
+                                <td class="info__size-td"><span class="info__size-content">78</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">БЕДРА</span></td>
+                                <td class="info__size-td"><span class="info__size-content">88</span></td>
+                                <td class="info__size-td"><span class="info__size-content">92</span></td>
+                                <td class="info__size-td"><span class="info__size-content">96</span></td>
+                                <td class="info__size-td"><span class="info__size-content">100</span></td>
+                                <td class="info__size-td"><span class="info__size-content">104</span></td>
+                            </tr>
+                        </table>
+                        <table class="info__size-table">
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-content">размеры в см</span></td>
+                                <td class="info__size-td"><span class="info__size-title">IT</span></td>
+                                <td class="info__size-td"><span class="info__size-title">FR</span></td>
+                                <td class="info__size-td"><span class="info__size-title">UK</span></td>
+                                <td class="info__size-td"><span class="info__size-title">US</span></td>
+                                <td class="info__size-td"><span class="info__size-title">RU</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">XXS</span></td>
+                                <td class="info__size-td"><span class="info__size-content"></span></td>
+                                <td class="info__size-td"><span class="info__size-content"></span></td>
+                                <td class="info__size-td"><span class="info__size-content"></span></td>
+                                <td class="info__size-td"><span class="info__size-content"></span></td>
+                                <td class="info__size-td"><span class="info__size-content">38</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">XS</span></td>
+                                <td class="info__size-td"><span class="info__size-content">38</span></td>
+                                <td class="info__size-td"><span class="info__size-content">34</span></td>
+                                <td class="info__size-td"><span class="info__size-content">6</span></td>
+                                <td class="info__size-td"><span class="info__size-content">2</span></td>
+                                <td class="info__size-td"><span class="info__size-content">40</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">S</span></td>
+                                <td class="info__size-td"><span class="info__size-content">40</span></td>
+                                <td class="info__size-td"><span class="info__size-content">36</span></td>
+                                <td class="info__size-td"><span class="info__size-content">8</span></td>
+                                <td class="info__size-td"><span class="info__size-content">4</span></td>
+                                <td class="info__size-td"><span class="info__size-content">42</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">M</span></td>
+                                <td class="info__size-td"><span class="info__size-content">42</span></td>
+                                <td class="info__size-td"><span class="info__size-content">38</span></td>
+                                <td class="info__size-td"><span class="info__size-content">10</span></td>
+                                <td class="info__size-td"><span class="info__size-content">6</span></td>
+                                <td class="info__size-td"><span class="info__size-content">44</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">L</span></td>
+                                <td class="info__size-td"><span class="info__size-content">44</span></td>
+                                <td class="info__size-td"><span class="info__size-content">40</span></td>
+                                <td class="info__size-td"><span class="info__size-content">12</span></td>
+                                <td class="info__size-td"><span class="info__size-content">8</span></td>
+                                <td class="info__size-td"><span class="info__size-content">46</span></td>
+                            </tr>
+                            <tr class="info__size-tr">
+                                <td class="info__size-td"><span class="info__size-title">XL</span></td>
+                                <td class="info__size-td"><span class="info__size-content">46</span></td>
+                                <td class="info__size-td"><span class="info__size-content">42</span></td>
+                                <td class="info__size-td"><span class="info__size-content">14</span></td>
+                                <td class="info__size-td"><span class="info__size-content">10</span></td>
+                                <td class="info__size-td"><span class="info__size-content">48</span></td>
+                            </tr>
+                        </table>
+                        <div class="content info__content" style="margin-top: 40px;">
+                            Это руководство по размеру предоставлено в качестве общей справки, которая поможет вам определить свой размер. Точные размеры могут отличаться для каждой модели.
+                            <br> <br>
+                            Если у вас средний размер, мы рекомендуем вам выбрать больший размер, так как некоторые из наших моделей подходят на размер меньше.
+                            <br> <br>
+                            Для получения дополнительной помощи, пожалуйста, не стесняйтесь обращаться к нам по номеру 8(800)500-73-24. Мы будем рады помочь вам!
+                        </div>
+                    </div>
+                    <div class="info__pay">
+                        <div class="subtitle">Доставка и оплата</div>
+                        <div class="info__size-line"></div>
+                        <div class="info__pay-block">
+                            <div class="info__subtitle">Как будет работать доставка?</div>
+                            <div class="info__content content">Интернет-магазин белья и одежды для купания Tyurin стремится обеспечить максимум комфорта для клиентов. Именно поэтому, заказывая товары у нас, вы вправе рассчитывать на оперативную и удобную доставку. Бесплатная курьерская доставка в Москве и в пределах 25 км от МКАД осуществляется на следующий день со дня оформления заказа на сайте.</div>
+                        </div>
+                        <div class="info__pay-block">
+                            <div class="info__subtitle">Способы доставки</div>
+                            <ul class="content info__content">
+                                <li style="list-style: disc; margin-bottom: 6px;">Экспресс-доставка курьером по Москве и ближайшему Подмосковью (25 км от МКАД)</li>
+                                <li style="list-style: disc; margin-bottom: 6px;">Самовывоз из нашего фирменного магазина в Москве в Крокус Сити Молл м.Мякинино.</li>
+                                <li style="list-style: disc; margin-bottom: 6px;">Доставка нашим партнером – службой экспресс-доставки EMS по всей России.</li>
+                                <li style="list-style: disc;">Доставка самым бюджетным способом – Почтой России в любую точку страны.</li>
+                            </ul>
+                        </div>
+                        <div class="info__pay-block">
+                            <div class="info__subtitle">Оплата товара курьеру</div>
+                            <ul class="content info__content">
+                                <li style="list-style: disc; margin-bottom: 6px;">Наличными курьеру (предоставляется товарный чек, товарно-транспортная накладная);</li>
+                                <li style="list-style: disc; margin-bottom: 18px;">Банковской картой через мобильный терминал оплаты. Сообщите, пожалуйста, о своем желании расплатиться банковской картой заранее, чтобы мы выдали курьеру мобильный терминал (предоставляется чек безналичной оплаты, товарный чек, товарно-транспортная накладная).</li>
+                                <li>Помните: доставка бесплатная, платить нужно только за товар.</li>
+                            </ul>
+                        </div>
+                        <div class="info__pay-block" style="margin-bottom: 0px;">
+                            <div class="info__subtitle">Примерка купальников</div>
+                            <div class="content info__content">
+                                Вы можете примерить купальные комплекты, чтобы убедиться в их качестве и проверить размер. Мы рекомендуем воспользоваться этой возможностью, на это предусмотрено 10-15 минут.
+                                <br><br>
+                                Купальник с бесплатной доставкой и примеркой — наше специальное предложение для покупателей в Москве и ближнем Подмосковье.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__contact">
+                        <div class="subtitle">Контакты</div>
+                        <div class="info__size-line"></div>
+                        <div class="content info__content">Мы здесь, чтобы помочь вам! Для получения поддержки клиентов свяжитесь с нами удобным для вас способом или оставьте свой запрос заполнив форму ниже.</div>
                         <form action="#">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="Фамилия">
-                            <input type="text" placeholder="Почта">
-                            <input type="text" placeholder="Пароль">
-                            <input type="text" placeholder="Телефон">
-                            <button type="submit">обновить профиль</button>
+                            <div class="info__contact-information">
+                                <input class="info__contact-name" type="text" placeholder="Имя*">
+                                <input class="info__contact-name" type="text" placeholder="Email*">
+                            </div>
+                            <input class="info__contact-number" type="text" placeholder="Номер заказа">
+                            <input type="text" class="info__contact-comment" placeholder="Сообщение">
+                            <button type="submit">отправить сообщение</button>
                         </form>
+                        <div class="info__contact-connect">
+                            <div class="info__contact-block">
+                                <div class="info__subtitle">Телефон</div>
+                                <a href="tel:+78005007324" class="content info__content">8(800)500-73-24</a>
+                            </div>
+                            <div class="info__contact-block">
+                                <div class="info__subtitle">instagram</div>
+                                <a href="https://www.instagram.com/" class="content info__content">@tyurinwear</a>
+                            </div>
+                            <div class="info__contact-block">
+                                <div class="info__subtitle">почта</div>
+                                <a href="mailto:tyurin.company@mail.com" class="content info__content">tyurin.company@mail.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

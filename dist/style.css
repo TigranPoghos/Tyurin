@@ -257,10 +257,10 @@ button {
   background: #F5EDED;
   border-bottom: 1px solid #DED6D6;
 }
-.header__fon .header__logo img:first-child {
+.header__fon .header__logo a:first-child {
   display: none;
 }
-.header__fon .header__logo img:last-child {
+.header__fon .header__logo a:last-child {
   display: block;
 }
 .header__fon .header__menu-item {
@@ -272,10 +272,10 @@ button {
 .header.active {
   background: #F5EDED;
 }
-.header.active .header__logo img:first-child {
+.header.active .header__logo a:first-child {
   display: none;
 }
-.header.active .header__logo img:last-child {
+.header.active .header__logo a:last-child {
   display: block;
 }
 .header.active .header__menu-item {
@@ -287,10 +287,10 @@ button {
 .header.activeBasket {
   background: #F5EDED;
 }
-.header.activeBasket .header__logo img:first-child {
+.header.activeBasket .header__logo a:first-child {
   display: none;
 }
-.header.activeBasket .header__logo img:last-child {
+.header.activeBasket .header__logo a:last-child {
   display: block;
 }
 .header.activeBasket .header__menu-item {
@@ -303,10 +303,10 @@ button {
   background: #F5EDED;
   border-bottom: 1px solid #DED6D6;
 }
-.header:hover .header__logo img:first-child {
+.header:hover .header__logo a:first-child {
   display: none;
 }
-.header:hover .header__logo img:last-child {
+.header:hover .header__logo a:last-child {
   display: block;
 }
 .header:hover .header__menu-item {
@@ -326,7 +326,7 @@ button {
 .header__logo {
   margin-top: 10px;
 }
-.header__logo img:last-child {
+.header__logo a:last-child {
   display: none;
 }
 .header__nav {
@@ -2310,4 +2310,28 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.Journal__row {
+  padding: 206px 0 120px 0;
+  flex-direction: column;
+}
+.Journal__title {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+  font-size: 64px;
+  margin-bottom: 54px;
+}
+.Journal__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Journal__subtitle-category {
+  display: flex;
+  gap: 12px;
+  opacity: 0.4;
 }

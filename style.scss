@@ -256,11 +256,11 @@ button {
         border-bottom: 1px solid #DED6D6;
 
         & .header__logo {
-            & img:first-child {
+            & a:first-child {
                 display: none;
             }
 
-            & img:last-child {
+            & a:last-child {
                 display: block;
             }
         }
@@ -282,11 +282,11 @@ button {
         background: #F5EDED;
 
         & .header__logo {
-            & img:first-child {
+            & a:first-child {
                 display: none;
             }
 
-            & img:last-child {
+            & a:last-child {
                 display: block;
             }
         }
@@ -308,11 +308,11 @@ button {
         background: #F5EDED;
 
         & .header__logo {
-            & img:first-child {
+            & a:first-child {
                 display: none;
             }
 
-            & img:last-child {
+            & a:last-child {
                 display: block;
             }
         }
@@ -335,11 +335,11 @@ button {
         border-bottom: 1px solid #DED6D6;
 
         & .header__logo {
-            & img:first-child {
+            & a:first-child {
                 display: none;
             }
 
-            & img:last-child {
+            & a:last-child {
                 display: block;
             }
         }
@@ -370,7 +370,7 @@ button {
     &__logo {
         margin-top: 10px;
 
-        & img:last-child {
+        & a:last-child {
             display: none;
         }
     }
@@ -2736,3 +2736,31 @@ button {
     }
 }
 
+.Journal {
+    &__row {
+        padding: 206px 0 120px 0;
+        flex-direction: column;
+    }
+
+    &__title {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        color: #222;
+        font-size: 64px;
+        margin-bottom: 54px;
+    }
+
+    &__subtitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &-category {
+            display: flex;
+            gap: 12px;
+            opacity: .4;
+        }
+    }
+}

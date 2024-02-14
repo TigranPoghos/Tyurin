@@ -2749,6 +2749,13 @@ button {
         color: #222;
         font-size: 64px;
         margin-bottom: 54px;
+
+        &-text {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+            color: #222;
+        }
     }
 
     &__subtitle {
@@ -2762,5 +2769,56 @@ button {
             gap: 12px;
             opacity: .4;
         }
+    }
+
+    &__text {
+        font-size: 12px;
+        color: #222;
+        opacity: 0.4;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__content {
+        max-width: 600px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+        margin-bottom: 120px;
+
+        &-text {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #222;
+        }
+
+        &-line {
+            height: 40px;
+            width: 1px;
+            background-color: #222;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__line {
+        width: 100vw;
+        margin-left: 50%;
+        position: absolute;
+        left: -50vw;
+        height: 1px;
+        background-color: #DED6D6;
     }
 }

@@ -466,6 +466,10 @@ button {
             display: flex;
         }
     }
+
+    &__burger {
+        display: none;
+    }
 }
 
 .footer {
@@ -788,6 +792,10 @@ button {
         max-height: 1200px;
         position: relative;
 
+        &-1024 {
+            display: none;
+        }
+
         &-title {
             color: #F5EDED;
             text-align: center;
@@ -868,7 +876,7 @@ button {
         &-subtitle {
             color: #FFF;
             font-weight: 500;
-            line-height: 110%;
+            line-height: 72%;
             text-transform: uppercase;
         }
 
@@ -2980,6 +2988,68 @@ button {
             display: flex;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__profile {
+            display: none;
+        }
+
+        &__burger {
+            display: flex;
+        }
+    }
+
+    .mission {
+        &__row {
+            padding: 120px 0;
+        }
+
+        & video {
+            max-height: 640px;
+        }
+    }
+
+    .gallery {
+        &__row {
+            padding-bottom: 120px;
+        }
+
+        &__right {
+            padding: 106.5px 0 106.5px 171px;
+
+            &-second {
+                padding: 106.5px 171px 106.5px 0;
+            }
+        }
+
+        &__left {
+            display: none;
+
+            &-1024 {
+                display: block;
+            }
+        }
+    }
+
+    .arrival__row {
+        min-height: 640px;
+    }
+
+    .journal {
+        &__row {
+            padding-bottom: 120px;
         }
     }
 }

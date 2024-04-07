@@ -405,6 +405,9 @@ button {
 .header__opacity.active {
   display: flex;
 }
+.header__burger {
+  display: none;
+}
 
 .footer {
   flex: 0 0 auto;
@@ -674,6 +677,9 @@ button {
   max-height: 1200px;
   position: relative;
 }
+.gallery__left-1024 {
+  display: none;
+}
 .gallery__left-title {
   color: #F5EDED;
   text-align: center;
@@ -742,7 +748,7 @@ button {
 .categories__item-subtitle {
   color: #FFF;
   font-weight: 500;
-  line-height: 110%;
+  line-height: 72%;
   text-transform: uppercase;
 }
 .categories__item-gradient {
@@ -2515,4 +2521,46 @@ button {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__profile {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+  .mission__row {
+    padding: 120px 0;
+  }
+  .mission video {
+    max-height: 640px;
+  }
+  .gallery__row {
+    padding-bottom: 120px;
+  }
+  .gallery__right {
+    padding: 106.5px 0 106.5px 171px;
+  }
+  .gallery__right-second {
+    padding: 106.5px 171px 106.5px 0;
+  }
+  .gallery__left {
+    display: none;
+  }
+  .gallery__left-1024 {
+    display: block;
+  }
+  .arrival__row {
+    min-height: 640px;
+  }
+  .journal__row {
+    padding-bottom: 120px;
+  }
 }

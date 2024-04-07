@@ -452,17 +452,22 @@ button {
   flex-direction: column;
   margin-right: 439px;
 }
+.footer__middle-logo a {
+  margin-bottom: 66px;
+  max-width: 117px;
+}
+.footer__middle-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .footer__middle-info {
   font-size: 12px;
   line-height: 145%;
-  margin-top: 8px;
   font-family: "Inter";
   color: #000;
   text-transform: uppercase;
-}
-.footer__middle a {
-  margin-bottom: 66px;
-  max-width: 117px;
+  opacity: 0.4;
 }
 .footer__middle-email {
   display: flex;
@@ -526,6 +531,7 @@ button {
   line-height: 145%;
   text-transform: uppercase;
   margin-right: 578px;
+  opacity: 0.4;
 }
 .footer__bottom-payments {
   display: flex;
@@ -2584,8 +2590,11 @@ button {
     margin-bottom: 0;
     margin-top: 20px;
   }
+  .footer__container {
+    padding: 0;
+  }
   .footer__top {
-    padding: 64px 0 46px 0;
+    padding: 64px 20px 46px 20px;
   }
   .footer__top-info {
     max-width: 315px;
@@ -2596,5 +2605,41 @@ button {
   }
   .footer__top .content {
     max-width: 180px;
+  }
+  .footer__middle {
+    display: grid;
+    grid-template-columns: auto 649px;
+    grid-auto-rows: auto;
+    padding: 40px 20px;
+  }
+  .footer__middle-logo {
+    margin-right: 0;
+    grid-row: 1;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .footer__middle-logo a {
+    margin-bottom: 0;
+  }
+  .footer__middle-email {
+    margin-left: 0;
+    width: auto;
+    max-width: none;
+    grid-row: 2;
+    grid-column: 1/span 2;
+  }
+  .footer__middle form input {
+    max-width: 944px;
+  }
+  .footer__nav {
+    max-width: 649px;
+    grid-row: 1;
+    margin-bottom: 40px;
+  }
+  .footer__bottom {
+    padding: 20px;
+  }
+  .footer__bottom-law {
+    margin-right: 150px;
   }
 }

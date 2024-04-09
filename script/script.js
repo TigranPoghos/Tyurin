@@ -341,6 +341,11 @@ document.addEventListener("DOMContentLoaded", function(){
     const burger = document.querySelector('.header__burger')
     const burgerBody = document.querySelector('.header__burger-body')
     const burger__opacity = document.querySelector('.header__burger-opacity')
+    const burger__catalogBody = document.querySelector('.burger__catalogBody')
+    const burger__catalog = document.querySelector('.burger__catalog')
+    const burger__catalogClose = document.querySelector('.burger__catalogClose')
+    const burger__close = document.querySelector('.burger__close')
+    const burger__catalogExit = document.querySelector('.burger__catalogExit')
 
     burger?.addEventListener('click', function(){
         burgerBody?.classList.toggle('active')
@@ -348,12 +353,11 @@ document.addEventListener("DOMContentLoaded", function(){
         burger__opacity?.classList.toggle('active')
     })
 
-    const burger__close = document.querySelector('.burger__close')
-
     burger__close?.addEventListener('click', function(){
         burgerBody?.classList.toggle('active')
         body?.classList.toggle('activeBurger')
         burger__opacity?.classList.toggle('active')
+        burger__catalogBody?.classList.remove('active')
     })
 
     //клик вне бургера
@@ -365,15 +369,24 @@ document.addEventListener("DOMContentLoaded", function(){
             burgerBody?.classList.remove('active')
             body?.classList.remove('activeBurger')
             burger__opacity?.classList.remove('active')
+            burger__catalogBody?.classList.remove('active')
         }
     })
 
     //каталог бургера
-    const burger__catalogBody = document.querySelector('.burger__catalogBody')
-    const burger__catalog = document.querySelector('.burger__catalog')
-
-    burger__catalog?this.addEventListener('click', function(){
+    burger__catalog?.addEventListener('click', function(){
         burger__catalogBody?.classList.toggle('active')
+    })
+
+    burger__catalogClose?.addEventListener('click', function(){
+        burger__catalogBody?.classList.toggle('active')
+    })
+
+    burger__catalogExit?.addEventListener('click', function(){
+        burgerBody?.classList.toggle('active')
+        body?.classList.toggle('activeBurger')
+        burger__opacity?.classList.toggle('active')
+        burger__catalogBody?.classList.remove('active')
     })
 
 

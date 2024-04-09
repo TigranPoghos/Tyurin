@@ -422,6 +422,9 @@ button {
 .header__burger-body.active {
   display: flex;
 }
+.header__burger-close {
+  max-height: 24px;
+}
 .header__burger-opacity {
   width: 100vw;
   height: 100vh;
@@ -487,6 +490,44 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
+  display: none;
+  background-color: #F5EDED;
+  flex-direction: column;
+}
+.header__burger-catalog.active {
+  display: flex;
+}
+.header__burger-catalog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DEDAD6;
+}
+.header__burger-catalog-title {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.header__burger-catalog-title span {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.4;
+  color: #222;
+}
+.header__burger-catalog-close {
+  max-height: 24px;
+}
+.header__burger-catalog-nav {
+  display: flex;
+  flex-direction: column;
+}
+.header__burger-catalog-nav ul {
+  gap: 20px;
+  padding: 24px 29px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DEDAD6;
 }
 
 .footer {
@@ -1079,6 +1120,7 @@ button {
   font-size: 12px;
   margin-top: 16px;
   margin-bottom: 8px;
+  line-height: normal;
 }
 .journal__1024 {
   display: none;
@@ -2636,6 +2678,12 @@ button {
   .container {
     padding: 0 20px;
   }
+  .header__top {
+    padding: 20px 0 12px 0;
+  }
+  .header__logo {
+    margin-top: 0;
+  }
   .header__menu {
     display: none;
   }
@@ -2746,5 +2794,170 @@ button {
   }
   .card__row-1024 {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .mission__row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mission__left {
+    width: auto;
+  }
+  .mission__right {
+    width: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .gallery__row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .gallery__row-second {
+    flex-direction: column-reverse;
+  }
+  .gallery__right {
+    width: auto;
+    margin-left: auto;
+    padding: 0;
+    max-width: 512px;
+  }
+  .gallery__right-second {
+    width: auto;
+    padding: 0;
+    max-width: 512px;
+    margin-right: auto;
+  }
+  .gallery__left-1024second {
+    margin-left: auto;
+  }
+  .categories__row {
+    flex-direction: column;
+  }
+  .categories__item {
+    width: auto;
+  }
+  .card__item {
+    max-width: 482px;
+  }
+  .card__item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card .swiper-slide {
+    width: 482px !important;
+  }
+  .journal__right {
+    max-width: 354px;
+  }
+  .journal__right-title {
+    line-height: 39px;
+  }
+  .footer__top-info {
+    max-width: 220px;
+  }
+  .footer__middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__middle-logo {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__middle-block {
+    align-items: end;
+  }
+  .footer__nav {
+    max-width: 100%;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__bottom-law {
+    margin-right: 0;
+  }
+  .footer__bottom-policy {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .header__top {
+    padding: 20px 0;
+  }
+  .video__row {
+    min-height: 798px;
+  }
+  .mission video {
+    max-height: 550px;
+  }
+  .gallery__left-1024 svg {
+    width: 317px;
+    height: 396px;
+  }
+  .gallery__right {
+    max-width: 317px;
+  }
+  .gallery__right-second {
+    max-width: 317px;
+  }
+  .card__item {
+    max-width: 295px;
+  }
+  .card .swiper-slide {
+    width: 295px !important;
+  }
+  .arrival__row {
+    min-height: 600px;
+  }
+  .journal__bottom {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .journal__right {
+    max-width: 100%;
+  }
+  .journal__right-date {
+    margin-bottom: 16px;
+  }
+  .journal__right-content {
+    margin-bottom: 16px;
+  }
+  .journal__right-button {
+    margin-bottom: 0;
+  }
+  .journal__1024 {
+    margin-top: 40px;
+  }
+  .journal__sections {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__top {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__top .content {
+    max-width: 290px;
+  }
+  .footer__top-info {
+    max-width: 440px;
+  }
+  .footer__middle-logo {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 35px;
+  }
+  .footer__middle-email {
+    text-align: center;
+  }
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 61px;
   }
 }

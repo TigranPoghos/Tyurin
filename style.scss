@@ -486,6 +486,10 @@ button {
             }
         }
 
+        &-close {
+            max-height: 24px;
+        }
+
         &-opacity {
             width: 100vw;
             height: 100vh;
@@ -561,6 +565,51 @@ button {
             top: 0;
             width: 100%;
             height: 100%;
+            display: none;
+            background-color: #F5EDED;
+            flex-direction: column;
+
+            &.active {
+                display: flex;
+            }
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #DEDAD6;
+            }
+
+            &-title {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+
+                & span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    opacity: .4;
+                    color: #222;
+                }
+            }
+
+            &-close {
+                max-height: 24px;
+            }
+
+            &-nav {
+                display: flex;
+                flex-direction: column;
+
+                & ul {
+                    gap: 20px;
+                    padding: 24px 29px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #DEDAD6;
+                }
+            }
         }
     }
 }
@@ -1275,6 +1324,7 @@ button {
             font-size: 12px;
             margin-top: 16px;
             margin-bottom: 8px;
+            line-height: normal;
         }
     }
 
@@ -3126,6 +3176,14 @@ button {
     }
 
     .header {
+        &__top {
+            padding: 20px 0 12px 0;
+        }
+
+        &__logo {
+            margin-top: 0;
+        }
+
         &__menu {
             display: none;
         }
@@ -3279,6 +3337,254 @@ button {
             &-1024 {
                 display: flex;
             }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .mission {
+        &__row {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__left {
+            width: auto;
+        }
+
+        &__right {
+            width: auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    .gallery {
+        &__row {
+            flex-direction: column;
+            gap: 40px;
+
+            &-second {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__right {
+            width: auto;
+            margin-left: auto;
+            padding: 0;
+            max-width: 512px;
+
+            &-second {
+                width: auto;
+                padding: 0;
+                max-width: 512px;
+                margin-right: auto;
+            }
+        }
+
+        &__left {
+            &-1024second {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .categories {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: auto;
+        }
+    }
+
+    .card {
+        &__item {
+            max-width: 482px;
+
+            &-name {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        & .swiper-slide {
+            width: 482px !important;
+        }
+    }
+
+    .journal {
+        &__right {
+            max-width: 354px;
+
+            &-title {
+                line-height: 39px;
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            &-info {
+                max-width: 220px;
+            }
+        }
+
+        &__middle {
+            display: flex;
+            flex-direction: column;
+
+            &-logo {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            &-block {
+                align-items: end;
+            }
+        }
+
+        &__nav {
+            max-width: 100%;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            gap: 20px;
+
+            &-law {
+                margin-right: 0;
+            }
+
+            &-policy {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .header {
+        &__top {
+            padding: 20px 0;
+        }
+    }
+
+    .video {
+        &__row {
+            min-height: 798px;
+        }
+    }
+
+    .mission {
+        & video {
+            max-height: 550px;
+        }
+    }
+
+    .gallery {
+        &__left {
+            &-1024 {
+                & svg {
+                    width: 317px;
+                    height: 396px;
+                }
+            }
+        }
+
+        &__right {
+            max-width: 317px;
+
+            &-second {
+                max-width: 317px;
+            }
+        }
+    }
+
+    .card {
+        &__item {
+            max-width: 295px;
+        }
+
+        & .swiper-slide {
+            width: 295px !important;
+        }
+    }
+
+    .arrival {
+        &__row {
+            min-height: 600px;
+        }
+    }
+
+    .journal {
+        &__bottom {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__right {
+            max-width: 100%;
+
+            &-date {
+                margin-bottom: 16px;
+            }
+
+            &-content {
+                margin-bottom: 16px;
+            }
+
+            &-button {
+                margin-bottom: 0;
+            }
+        }
+
+        &__1024 {
+            margin-top: 40px;
+        }
+
+        &__sections {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    .footer {
+        &__top {
+            padding: 40px 20px;
+            flex-direction: column;
+            gap: 40px;
+
+            & .content {
+                max-width: 290px;
+            }
+
+            &-info {
+                max-width: 440px;
+            }
+        }
+
+        &__middle {
+            &-logo {
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 35px;
+            }
+
+            &-email {
+                text-align: center;
+            }
+        }
+
+        &__nav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+            margin-bottom: 61px;
         }
     }
 }

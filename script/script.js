@@ -327,5 +327,61 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    //слайдер card/index
+    var swiper = new Swiper(".card__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+    });
+
+
+
+
+
+    //бургер
+    const burger = document.querySelector('.header__burger')
+    const burgerBody = document.querySelector('.header__burger-body')
+    const burger__opacity = document.querySelector('.header__burger-opacity')
+
+    burger?.addEventListener('click', function(){
+        burgerBody?.classList.toggle('active')
+        body?.classList.toggle('activeBurger')
+        burger__opacity?.classList.toggle('active')
+    })
+
+    const burger__close = document.querySelector('.burger__close')
+
+    burger__close?.addEventListener('click', function(){
+        burgerBody?.classList.toggle('active')
+        body?.classList.toggle('activeBurger')
+        burger__opacity?.classList.toggle('active')
+    })
+
+    //клик вне бургера
+    document.addEventListener('click', (e) => {
+        const clickBurger = e.composedPath().includes(burger)
+        const clickBurgerBody = e.composedPath().includes(burgerBody)
+    
+        if (( !clickBurger ) && (!clickBurgerBody)) {
+            burgerBody?.classList.remove('active')
+            body?.classList.remove('activeBurger')
+            burger__opacity?.classList.remove('active')
+        }
+    })
+
+    //каталог бургера
+    const burger__catalogBody = document.querySelector('.burger__catalogBody')
+    const burger__catalog = document.querySelector('.burger__catalog')
+
+    burger__catalog?this.addEventListener('click', function(){
+        burger__catalogBody?.classList.toggle('active')
+    })
+
+
+
+
+
+
+
+
 
 })

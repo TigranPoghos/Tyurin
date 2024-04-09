@@ -59,6 +59,10 @@ body {
     &.activeFilters {
         overflow: hidden;
     }
+
+    &.activeBurger {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -365,6 +369,7 @@ button {
         display: flex;
         padding: 20px 0;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__logo {
@@ -373,10 +378,6 @@ button {
         & a:last-child {
             display: none;
         }
-    }
-
-    &__nav {
-        margin-left: 585px;
     }
 
     &__menu {
@@ -391,8 +392,6 @@ button {
     &__svg {
         display: flex;
         gap: 24px;
-        margin-left: auto;
-        margin-right: 0;
     }
 
     &__catalog {
@@ -469,6 +468,100 @@ button {
 
     &__burger {
         display: none;
+
+        &-body {
+            display: none;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 360px;
+            width: 100%;
+            background-color: #F5EDED;
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-opacity {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            z-index: 7;
+            left: 0;
+            top: 0;
+            background-color: #222;
+            opacity: 0.8;
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 12px;
+            opacity: .4;
+            color: #222;
+        }
+
+        &-nav {
+            padding: 20px;
+            border-top: 1px solid #dedad6;
+            border-bottom: 1px solid #dedad6;
+            box-sizing: border-box;
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            
+            & span {
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #222;
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+
+            & span {
+                margin-bottom: 13px;
+            }
+        }
+
+        &-catalog {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -903,6 +996,11 @@ button {
         padding: 40px 0 202px 0;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        &-1024 {
+            display: none;
+            padding: 20px 0 120px 0;
+        }
     }
 
     &__item {
@@ -982,6 +1080,24 @@ button {
     &__row-2 {
         padding-bottom: 80px;
         padding-top: 0;
+    }
+
+    & .swiper {
+        width: 100%;
+        height: 100%;
+    }
+  
+    & .swiper-slide {
+        display: flex;
+        align-items: center;
+        width: 600px !important;
+    }
+  
+    & .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -3152,6 +3268,16 @@ button {
 
             &-law {
                 margin-right: 150px;
+            }
+        }
+    }
+
+    .card {
+        &__row {
+            display: none;
+
+            &-1024 {
+                display: flex;
             }
         }
     }

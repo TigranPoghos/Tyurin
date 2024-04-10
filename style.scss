@@ -3588,3 +3588,88 @@ button {
         }
     }
 }
+
+@media (max-width:360px) {
+    .video {
+        &__row {
+            min-height: 720px;
+        }
+    }
+
+    .mission {
+        &__row {
+            padding: 80px 0;
+        }
+
+        &__left {
+            &-title {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .gallery {
+        &__row {
+            padding-bottom: 80px;
+        }
+
+        &__left {
+            &-1024 svg {
+                width: 238px;
+                height: 297px;
+            }
+        }
+
+        &__right {
+            max-width: 238px;
+
+            &-second {
+                max-width: 238px;
+            }
+        }
+    }
+
+    .card {
+        & .swiper-slide {
+            width: 216px !important;
+        }
+
+        &__item {
+            max-width: 216px;
+            gap: 11px;
+
+            &-name {
+                white-space: wrap;
+            }
+
+            &-content {
+                gap: 0;
+                justify-content: space-between;
+                min-height: 89px;
+                box-sizing: border-box;
+            }
+        }
+
+        &__row {
+            padding: 20px 0 80px 0;
+        }
+    }
+
+    .arrival {
+        &__row {
+            min-height: 450px;
+        }
+    }
+
+    .journal {
+        &__top {
+            &-title {
+                font-size: 40px;
+            }
+        }
+
+        &__row {
+            padding-bottom: 80px;
+        }
+    }
+}

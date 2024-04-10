@@ -2961,3 +2961,55 @@ button {
     margin-bottom: 61px;
   }
 }
+@media (max-width: 360px) {
+  .video__row {
+    min-height: 720px;
+  }
+  .mission__row {
+    padding: 80px 0;
+  }
+  .mission__left-title {
+    font-size: 40px;
+  }
+  .gallery__row {
+    padding-bottom: 80px;
+  }
+  .gallery__left-1024 svg {
+    width: 238px;
+    height: 297px;
+  }
+  .gallery__right {
+    max-width: 238px;
+  }
+  .gallery__right-second {
+    max-width: 238px;
+  }
+  .card .swiper-slide {
+    width: 216px !important;
+  }
+  .card__item {
+    max-width: 216px;
+    gap: 11px;
+  }
+  .card__item-name {
+    white-space: wrap;
+  }
+  .card__item-content {
+    gap: 0;
+    justify-content: space-between;
+    min-height: 89px;
+    box-sizing: border-box;
+  }
+  .card__row {
+    padding: 20px 0 80px 0;
+  }
+  .arrival__row {
+    min-height: 450px;
+  }
+  .journal__top-title {
+    font-size: 40px;
+  }
+  .journal__row {
+    padding-bottom: 80px;
+  }
+}

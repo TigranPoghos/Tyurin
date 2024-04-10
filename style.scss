@@ -1750,6 +1750,11 @@ button {
             flex-direction: column;
             align-items: center;
             width: 100%;
+
+            & .title {
+                font-size: 64px;
+                color: #222;
+            }
         }
 
         &-create {
@@ -2464,12 +2469,16 @@ button {
 
 .profile {
     &__row {
-        padding: 216px 0 120px 0;
+        padding: 231px 0 120px 0;
     }
 
     &__left {
         max-width: 290px;
         width: 100%;
+
+        &__line {
+            display: none;
+        }
 
         &-button {
             padding: 16px 0;
@@ -2530,6 +2539,7 @@ button {
             line-height: 72%;
             text-decoration-line: underline;
             text-transform: uppercase;
+            max-width: max-content;
         }
 
         &-line {
@@ -2578,6 +2588,10 @@ button {
                 background: #222;
             }
         }
+    }
+
+    &__swiper {
+        display: none;
     }
 }
 
@@ -3170,6 +3184,14 @@ button {
     }
 }
 
+@media (max-width:1300px) {
+    .profile {
+        &__right {
+            margin-left: auto;
+        }
+    }
+}
+
 @media (max-width:1024px) {
     .container {
         padding: 0 20px;
@@ -3339,6 +3361,42 @@ button {
             }
         }
     }
+
+    .login {
+        &__row {
+            padding-top: 69px;
+            justify-content: center;
+        }
+
+        &__right {
+            display: none;
+        }
+
+        &__left {
+            width: auto;
+            padding: 120px 0;
+
+            &-content {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .Journal {
+        &__row {
+            padding: 188px 0 0 0;
+        }
+    }
+
+    .profile {
+        &__right {
+            margin-left: auto;
+        }
+
+        &__left {
+            margin-right: 20px;
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -3464,6 +3522,102 @@ button {
             }
         }
     }
+
+    .login {
+        &__row {
+            padding-top: 65px;
+        }
+
+        &__left {
+            padding: 120px 20px;
+        }
+    }
+
+    .Journal {
+        &__section {
+            &-container {
+                flex-direction: column;
+            }
+
+            &-right {
+                & img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .profile {
+        &__row {
+            flex-direction: column;
+            padding-top: 69px;
+
+            & .swiper {
+                width: 100%;
+                height: 100%;
+            }
+          
+            & .swiper-slide {
+                display: flex;
+                align-items: center;
+                max-width: max-content;
+            }
+          
+            & .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            & .swiper-wrapper {
+                align-items: center;
+            }
+        }
+
+        &__left {
+            display: flex;
+            margin-right: 0;
+            max-width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+
+            &-button {
+                width: auto;
+                padding: 20px 0;
+                border-bottom: none;
+
+                &.active {
+                    border-bottom: none;
+                }
+            }
+
+            &-line {
+                display: flex;
+                position: relative;
+                margin-bottom: 40px;
+                left: 50%;
+                margin-left: -50vw;
+                background: #DED6D6;
+                width: 100vw;
+                height: 1px;
+            }
+
+            &-exit {
+                margin-top: 0;
+            }
+        }
+
+        &__right {
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        &__swiper {
+            display: flex;
+        }
+    }
 }
 
 @media (max-width:480px) {
@@ -3587,6 +3741,51 @@ button {
             margin-bottom: 61px;
         }
     }
+
+    .login {
+        &__left {
+            padding: 120px 20px;
+
+            &-content {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .Journal {
+        &__row {
+            padding: 196px 0 0 0;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__section {
+            &-container {
+                flex-direction: column;
+            }
+        }
+
+        &__title {
+            &-text {
+                text-align: center;
+            }
+        }
+
+        &__subtitle {
+            &-category {
+                flex-wrap: wrap;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .profile {
+        &__row {
+            padding-top: 77px;
+        }
+    }
 }
 
 @media (max-width:360px) {
@@ -3668,6 +3867,42 @@ button {
             }
         }
 
+        &__row {
+            padding-bottom: 80px;
+        }
+    }
+
+    .login {
+        &__left {
+            padding: 80px 20px;
+
+            &-block {
+                & .title {
+                    font-size: 40px;
+                }
+            }
+
+            &-content {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .Journal {
+        &__row {
+            padding: 156px 0 0 0;
+        }
+
+        &__article {
+            margin-bottom: 80px;
+        }
+
+        &__section {
+            padding-bottom: 80px;
+        }
+    }
+
+    .profile {
         &__row {
             padding-bottom: 80px;
         }

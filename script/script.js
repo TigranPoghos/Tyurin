@@ -327,14 +327,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-    //слайдер card/index
-    var swiper = new Swiper(".card__swiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-    });
-
-
-
 
 
     //бургер
@@ -392,9 +384,26 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    //слайдер card/index
+    const swiperElements = document.querySelectorAll('.card__swiper');
 
+    if (swiperElements) {
+        swiperElements.forEach(function(element) {
+            new Swiper(element, {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            });
+        });
+    }
 
+    //слайдер профиль
+    const swiperElementProfile = document.querySelector('.profile__swiper');
 
-
+    if (swiperElementProfile) {
+        var swiperProfile = new Swiper(swiperElementProfile, {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        });
+    }
 
 })

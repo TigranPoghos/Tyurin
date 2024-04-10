@@ -25,8 +25,8 @@
                         <ul class="header__menu">
                             <li><button class="menu-item header__menu-item header__catalogJs" href="#">Каталог</button></li>
                             <li><a class="menu-item header__menu-item" href="#">Коллекции</a></li>
-                            <li><a class="menu-item header__menu-item" href="#">О бренде</a></li>
-                            <li><a class="menu-item header__menu-item" href="#">Покупателям</a></li>
+                            <li><a class="menu-item header__menu-item" href="file:///F:/Tyurin/brand.html">О бренде</a></li>
+                            <li><a class="menu-item header__menu-item" href="file:///F:/Tyurin/info.html">Покупателям</a></li>
                             <li><a class="menu-item header__menu-item" href="#">Блог</a></li>
                         </ul>
                     </div>
@@ -35,7 +35,7 @@
                             <path d="M14.7204 15.7923L18.2203 19.2923C18.5103 19.5823 18.7003 19.2923 19.0003 19.0023C19.2903 18.7023 19.5704 18.5223 19.2804 18.2223L15.7803 14.7223C15.4803 14.4223 15.3004 14.7023 15.0004 15.0023C14.7004 15.2923 14.4104 15.4823 14.7104 15.7823L14.7204 15.7923Z" fill="white"/>
                             <path d="M4.01 10.76C4.01 14.48 7.03 17.51 10.76 17.51C12.57 17.51 14.28 16.78 15.53 15.52C16.78 14.26 17.5 12.56 17.5 10.75C17.5 7.02 14.47 4 10.75 4C7.02 4 4 7.02 4 10.75L4.01 10.76ZM5.51 10.76C5.51 7.86 7.86 5.51 10.76 5.51C13.65 5.51 16.01 7.86 16.01 10.76C16.01 12.16 15.45 13.48 14.47 14.46C13.49 15.44 12.16 16 10.75 16C7.85 16 5.5 13.64 5.5 10.75L5.51 10.76Z" fill="white"/>
                         </svg></a>
-                        <a href="file:///F:/Tyurin/profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <a class="header__profile" href="file:///F:/Tyurin/profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M5.5 15.4988V19.4988H18V15.4988L14.0956 14.2494L15.5873 13.2366L19.5 14.4988V20.9988H4V14.4988L7.91974 13.2344L9.38981 14.2541L5.5 15.4988Z" fill="white"/>
                             <path d="M11.75 13.5C13 13.5 16.5 11.37 16.5 8.75C16.5 6.12 14.37 4 11.75 4C9.12 4 7 6.12 7 8.75C7 11.37 10.5 13.5 11.75 13.5ZM11.75 12C10.5 12 8.5 10.54 8.5 8.75C8.5 6.95 9.95 5.5 11.75 5.5C13.54 5.5 15 6.95 15 8.75C15 10.54 13 12 11.75 12Z" fill="white"/>
                         </svg></a>
@@ -43,6 +43,13 @@
                             <path d="M18.5002 8.5L19.0004 20H5.50024L6.00004 8.5H18.5002ZM20.0002 7H4.5004L4 21.47L20.5004 21.5L20.0002 7Z" fill="white"/>
                             <path d="M15.1934 4.75C15.1934 3.23 13.9534 2 12.4434 2C10.9234 2 9.69336 3.23 9.69336 4.75V5.5H11.1934V4.75C11.1934 4.05 11.7434 3.5 12.4434 3.5C13.1334 3.5 13.6934 4.05 13.6934 4.75V5.5H15.1934V4.75Z" fill="white"/>
                         </svg></button>
+                        <button class="header__burger">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5.5H21C21 5.46553 21 4.41001 21 4.00001L3 4C3 4.41 3 5.5 3 5.5Z" fill="white" />
+                                <path d="M3 12.5H21C21 12.5 21 11.41 21 11H3C3 11 3 12.08 3 12.5Z" fill="white" />
+                                <path d="M3 19.5H21C21 19.5 21 18.41 21 18H3C3 18.41 3 19.5 3 19.5Z" fill="white" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="header__catalog">
@@ -73,6 +80,86 @@
         </div>
     </header>
     <main class="main">
+        <div class="header__burger-body BurgerBody">
+            <div class="header__burger-top">
+                <div class="header__burger-title">МЕНЮ</div>
+                <button class="burger__close header__burger-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.14088 17.9992L12.5756 12.5497C12.8764 12.2383 12.8764 11.7505 12.5756 11.4391C12.2645 11.1277 11.777 11.1277 11.4659 11.4287L6.02074 16.8678C6.32152 17.1688 7.17196 18.0303 7.14088 17.9992ZM16.911 6.01038L11.4659 11.4495C11.1547 11.7505 11.1547 12.2383 11.4659 12.5497C11.7667 12.8508 12.2541 12.8508 12.5653 12.5394L18 7.08989C17.6889 6.77849 16.911 6.01038 16.911 6.01038ZM12.5653 11.4495L7.12013 6C6.80899 6.30102 6 7.08989 6 7.08989L11.4348 12.529C11.7355 12.83 12.223 12.83 12.5342 12.529C12.8349 12.2176 12.8349 11.7297 12.5342 11.4183L12.5653 11.4495ZM11.4555 12.5497L16.8902 17.9888C16.8902 17.9888 17.6785 17.1792 17.9896 16.8782L12.5445 11.4287C12.2334 11.1173 11.7459 11.1173 11.4348 11.4287C11.1236 11.7297 11.1236 12.2176 11.4348 12.529L11.4555 12.5497Z" fill="#111214" />
+                    </svg>
+                </button>
+            </div>
+            <div class="header__burger-nav">
+                <ul>
+                    <li><button class="header__burger-item burger__catalog">
+                        <span>Каталог</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0402 12.0137L9 7L9.96838 6L15.502 11.5046L16 12L15.5112 12.4954L9.9776 18L9 17.0275L14.0402 12.0137Z" fill="#111214" />
+                        </svg>
+                    </button>
+                    <li><a href="#" class="header__burger-item">
+                        <span>коллекции</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0402 12.0137L9 7L9.96838 6L15.502 11.5046L16 12L15.5112 12.4954L9.9776 18L9 17.0275L14.0402 12.0137Z" fill="#111214" />
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="header__burger-item">
+                        <span>о бренде</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0402 12.0137L9 7L9.96838 6L15.502 11.5046L16 12L15.5112 12.4954L9.9776 18L9 17.0275L14.0402 12.0137Z" fill="#111214" />
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="header__burger-item">
+                        <span>покупателям</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0402 12.0137L9 7L9.96838 6L15.502 11.5046L16 12L15.5112 12.4954L9.9776 18L9 17.0275L14.0402 12.0137Z" fill="#111214" />
+                        </svg>
+                    </a></li>
+                    <li><a href="#" class="header__burger-item">
+                        <span>блог</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0402 12.0137L9 7L9.96838 6L15.502 11.5046L16 12L15.5112 12.4954L9.9776 18L9 17.0275L14.0402 12.0137Z" fill="#111214" />
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="header__burger-bottom">
+                <span class="content">Мой аккаунт</span>
+                <span class="content">Связаться с нами</span>
+            </div>
+            <div class="header__burger-catalog burger__catalogBody">
+                <div class="header__burger-catalog-top">
+                    <button class="header__burger-catalog-title burger__catalogClose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M19 11.316H7.1904V12.6932H19V11.316ZM7.1904 12.6932L12.8326 6.9824C12.8326 6.9824 12.1004 6.27544 11.8281 6L6 12.0046L7.1904 12.6932ZM6 12.0046L11.8281 18C11.8281 18 12.5416 17.2839 12.8232 17.0176L7.1904 11.316L6 12.0046Z" fill="#111214" />
+                        </svg>
+                        <span>НАЗАД</span>
+                    </button>
+                    <button class="header__burger-catalog-close burger__catalogExit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.14088 17.9992L12.5756 12.5497C12.8764 12.2383 12.8764 11.7505 12.5756 11.4391C12.2645 11.1277 11.777 11.1277 11.4659 11.4287L6.02074 16.8678C6.32152 17.1688 7.17196 18.0303 7.14088 17.9992ZM16.911 6.01038L11.4659 11.4495C11.1547 11.7505 11.1547 12.2383 11.4659 12.5497C11.7667 12.8508 12.2541 12.8508 12.5653 12.5394L18 7.08989C17.6889 6.77849 16.911 6.01038 16.911 6.01038ZM12.5653 11.4495L7.12013 6C6.80899 6.30102 6 7.08989 6 7.08989L11.4348 12.529C11.7355 12.83 12.223 12.83 12.5342 12.529C12.8349 12.2176 12.8349 11.7297 12.5342 11.4183L12.5653 11.4495ZM11.4555 12.5497L16.8902 17.9888C16.8902 17.9888 17.6785 17.1792 17.9896 16.8782L12.5445 11.4287C12.2334 11.1173 11.7459 11.1173 11.4348 11.4287C11.1236 11.7297 11.1236 12.2176 11.4348 12.529L11.4555 12.5497Z" fill="#111214" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="header__burger-catalog-nav">
+                    <ul class="header__catalog-menu">
+                        <li><a href="#" class="menu-item header__catalog-item">Купальники</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">СЛИТНЫЕ КУПАЛЬНИКИ</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Раздельные купальники</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Верх купальники</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Низ купальника</a></li>
+                    </ul>
+                    <ul class="header__catalog-menu">
+                        <li><a href="#" class="menu-item header__catalog-item">Одежда</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Одежда для вечеринок</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Одежда для купания</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">платья</a></li>
+                        <li><a href="#" class="menu-item header__catalog-item">Корсеты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__burger-opacity"></div>
         <div class="basket__opacity"></div>
         <div class="basket">
             <div class="basket__top">

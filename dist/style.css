@@ -571,7 +571,6 @@ button {
 .footer__middle-logo {
   display: flex;
   flex-direction: column;
-  margin-right: 439px;
 }
 .footer__middle-logo a {
   margin-bottom: 66px;
@@ -593,7 +592,6 @@ button {
 .footer__middle-email {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
   margin-right: 0;
   max-width: 425px;
   width: 100%;
@@ -651,13 +649,14 @@ button {
   font-size: 12px;
   line-height: 145%;
   text-transform: uppercase;
-  margin-right: 578px;
   opacity: 0.4;
 }
 .footer__bottom-payments {
   display: flex;
   gap: 32px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__bottom-payments img:nth-child(2) {
   max-height: 17px;
@@ -666,7 +665,6 @@ button {
   display: flex;
   gap: 32px;
   margin-right: 0;
-  margin-left: auto;
 }
 .footer__bottom-policy a {
   text-align: center;
@@ -682,6 +680,7 @@ button {
   width: 100%;
   justify-content: space-between;
   display: flex;
+  margin: 0 auto;
 }
 .footer__nav-item {
   color: #222;
@@ -2596,7 +2595,7 @@ button {
 }
 
 .collection__row {
-  padding-top: 120px;
+  padding-top: 204px;
   flex-direction: column;
   align-items: center;
 }
@@ -2771,7 +2770,7 @@ button {
   }
   .footer__middle {
     display: grid;
-    grid-template-columns: auto 649px;
+    grid-template-columns: 181px auto;
     grid-auto-rows: auto;
     padding: 40px 20px;
   }
@@ -2798,6 +2797,8 @@ button {
     max-width: 649px;
     grid-row: 1;
     margin-bottom: 40px;
+    margin-left: auto;
+    width: 100%;
   }
   .footer__bottom {
     padding: 20px;
@@ -2833,6 +2834,10 @@ button {
   }
   .profile__left {
     margin-right: 20px;
+  }
+  .collection__gallery img {
+    width: auto;
+    max-width: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -2990,6 +2995,13 @@ button {
   .profile__swiper {
     display: flex;
   }
+  .collection__title {
+    text-align: center;
+  }
+  .collection__bottom-section {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 @media (max-width: 480px) {
   .header__top {
@@ -3094,6 +3106,12 @@ button {
   .profile__row {
     padding-top: 77px;
   }
+  .collection__gallery {
+    flex-direction: column;
+  }
+  .collection__gallery img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 360px) {
   .video__row {
@@ -3166,5 +3184,17 @@ button {
   }
   .profile__row {
     padding-bottom: 80px;
+  }
+  .collection__row {
+    padding-top: 164px;
+  }
+  .collection__row-2 {
+    padding-bottom: 80px;
+  }
+  .collection__block {
+    margin-bottom: 80px;
+  }
+  .collection__bottom-section {
+    margin-top: 48px;
   }
 }

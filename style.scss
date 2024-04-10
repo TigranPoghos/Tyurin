@@ -661,7 +661,6 @@ button {
         &-logo {
             display: flex;
             flex-direction: column;
-            margin-right: 439px;
             
             & a {
                 margin-bottom: 66px;
@@ -687,7 +686,6 @@ button {
         &-email {
             display: flex;
             flex-direction: column;
-            margin-left: auto;
             margin-right: 0;
             max-width: 425px;
             width: 100%;
@@ -754,7 +752,6 @@ button {
             font-size: 12px;
             line-height: 145%;
             text-transform: uppercase;
-            margin-right: 578px;
             opacity: .4;
         }
 
@@ -762,6 +759,8 @@ button {
             display: flex;
             gap: 32px;
             align-items: center;
+            margin-left: auto;
+            margin-right: auto;
 
             & img:nth-child(2) {
                 max-height: 17px;
@@ -772,7 +771,6 @@ button {
             display: flex;
             gap: 32px;
             margin-right: 0;
-            margin-left: auto;
 
             & a {
                 text-align: center;
@@ -791,6 +789,7 @@ button {
         width: 100%;
         justify-content: space-between;
         display: flex;
+        margin: 0 auto;
 
         &-item {
             color: #222;
@@ -3075,7 +3074,7 @@ button {
 
 .collection {
     &__row {
-        padding-top: 120px;
+        padding-top: 204px;
         flex-direction: column;
         align-items: center;
 
@@ -3307,7 +3306,7 @@ button {
 
         &__middle {
             display: grid;
-            grid-template-columns: auto 649px;
+            grid-template-columns: 181px auto;
             grid-auto-rows: auto;
             padding: 40px 20px;
 
@@ -3341,6 +3340,8 @@ button {
             max-width: 649px;
             grid-row: 1;
             margin-bottom: 40px;
+            margin-left: auto;
+            width: 100%;
         }
 
         &__bottom {
@@ -3395,6 +3396,15 @@ button {
 
         &__left {
             margin-right: 20px;
+        }
+    }
+
+    .collection {
+        &__gallery {
+            & img {
+                width: auto;
+                max-width: 50%;
+            }
         }
     }
 }
@@ -3618,6 +3628,19 @@ button {
             display: flex;
         }
     }
+
+    .collection {
+        &__title {
+            text-align: center;
+        }
+
+        &__bottom {
+            &-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width:480px) {
@@ -3786,6 +3809,16 @@ button {
             padding-top: 77px;
         }
     }
+
+    .collection {
+        &__gallery {
+            flex-direction: column;
+
+            & img {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width:360px) {
@@ -3905,6 +3938,26 @@ button {
     .profile {
         &__row {
             padding-bottom: 80px;
+        }
+    }
+
+    .collection {
+        &__row {
+            padding-top: 164px;
+
+            &-2 {
+                padding-bottom: 80px;
+            }
+        }
+
+        &__block {
+            margin-bottom: 80px;
+        }
+
+        &__bottom {
+            &-section {
+                margin-top: 48px;
+            }
         }
     }
 }

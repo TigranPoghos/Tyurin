@@ -1044,6 +1044,8 @@ button {
         padding: 40px 0 202px 0;
         flex-wrap: wrap;
         justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
 
         &-1024 {
             display: none;
@@ -1086,9 +1088,14 @@ button {
         justify-content: space-between;
         align-items: center;
 
+        & .card__row {
+            display: flex;
+        }
+
         &-row {
             padding-top: 40px;
             padding-bottom: 0;
+            justify-content: space-between;
         }
 
         &-block {
@@ -1105,13 +1112,15 @@ button {
         }
 
         &-item {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         &-left {
             display: flex;
             flex-direction: column;
-            margin-right: 40px;
+            margin-right: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         &-right {
@@ -1345,6 +1354,7 @@ button {
     max-width: 640px;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
 
     &.active {
         display: flex;
@@ -3183,10 +3193,61 @@ button {
     }
 }
 
+@media (max-width:1920px) {
+    .card {
+        &__catalog {
+            &-left {
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-right: 0;
+            }
+
+            &-right {
+                & video {
+                    max-height: 1178px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1320px) {
+    .card__catalog {
+        & .card {
+            &__item {
+                max-width: 482px;
+
+                & video {
+                    max-height: 578.4px;
+                    min-width: 482px;
+                }
+
+                &-image {
+                    max-width: 482px;
+                }
+
+                &-name {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:1300px) {
     .profile {
         &__right {
             margin-left: auto;
+        }
+    }
+}
+
+@media (max-width:1065px) {
+    .card__catalog {
+        & .container {
+            padding: 0 20px;
         }
     }
 }
@@ -3363,6 +3424,37 @@ button {
         }
     }
 
+    .card__catalog {
+        & .card__row {
+            display: flex;
+        }
+
+        & .card {
+            &__item {
+                max-width: 354px;    
+                
+                & video {
+                    max-height: 425px;
+                    min-width: 354px;
+                }
+
+                &-image {
+                    max-width: 354px;
+                }    
+
+                &-name {
+                    white-space: wrap;
+                }
+            }
+        }
+
+        &-right {
+            & video {
+                max-height: 873px;
+            }
+        }
+    }
+
     .login {
         &__row {
             padding-top: 69px;
@@ -3481,6 +3573,29 @@ button {
 
         & .swiper-slide {
             width: 482px !important;
+        }
+    }
+
+    .card__catalog {
+        & .card {
+            &__item {
+                max-width: 320px;    
+                
+                & video {
+                    max-height: 385px;
+                    min-width: 320px;
+                }
+
+                &-image {
+                    max-width: 320px;
+                }    
+            }
+        }
+
+        &-right {
+            & video {
+                max-height: 873px;
+            }
         }
     }
 
@@ -3639,6 +3754,59 @@ button {
                 flex-direction: column;
                 gap: 20px;
             }
+        }
+    }
+
+    .filters {
+        padding: 20px;
+
+        &__top {
+            margin-bottom: 23px;
+        }
+
+        &__section {
+            &-menu {
+                flex-direction: column;
+                gap: 20px;
+
+                & li {
+                    margin: 0;
+
+                    &:nth-child(n+4) {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &-item {
+                flex-basis: 0;
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__button {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .card__catalog {
+        &-left {
+            justify-content: center;
+        }
+
+        &-right {
+            max-width: 320px;
+        }
+
+        &-right video {
+            max-width: 320px;
+            max-height: 385px;
         }
     }
 }

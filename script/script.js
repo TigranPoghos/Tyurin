@@ -406,4 +406,23 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
+
+    //слайдер продукты
+    const swiperElementProduct = document.querySelector('.product__left-swiper');
+
+    if (swiperElementProduct) {
+        var swiperProduct = new Swiper(swiperElementProduct, {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+        });
+    }
+
+
+
+
+
+    
+
 })

@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if (swiperElements) {
         swiperElements.forEach(function(element) {
             new Swiper(element, {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 spaceBetween: 20,
             });
         });
@@ -423,6 +423,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-    
+
 
 })

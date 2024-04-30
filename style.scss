@@ -969,15 +969,29 @@ button {
 
     &__right {
         width: 50%;
-        padding: 200px 0 200px 320px;
+        max-width: 640px;
         max-height: 1200px;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        & img {
+            max-height: 800px;
+        }
 
         &-second {
             width: 50%;
-            padding: 200px 320px 200px 0px;
+            margin-right: auto;
+            max-width: 640px;
+            display: flex;
+            align-items: center;
             max-height: 1200px;
             box-sizing: border-box;
+
+            & img {
+                max-height: 800px;
+            }
         }
     }
 }
@@ -2767,6 +2781,8 @@ button {
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
+        margin-bottom: 12px;
+        margin-top: 40px;
     }
 
     &__size {
@@ -2857,6 +2873,10 @@ button {
         flex-direction: column;
         width: 100%;
 
+        &-line {
+            margin-bottom: 0;
+        }
+
         &.active {
             display: flex;
         }
@@ -2865,8 +2885,8 @@ button {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-bottom: 40px;
+            // gap: 12px;
+            // margin-bottom: 40px;
         }
     }
 
@@ -3326,10 +3346,18 @@ button {
         }
 
         &__right {
-            padding: 106.5px 0 106.5px 171px;
+            max-width: 341px;
+
+            & img {
+                max-height: 427px;
+            }
 
             &-second {
-                padding: 106.5px 171px 106.5px 0;
+                max-width: 341px;
+
+                & img {
+                    max-height: 427px;
+                }
             }
         }
 
@@ -3697,12 +3725,20 @@ button {
             margin-left: auto;
             padding: 0;
             max-width: 512px;
+            
+            & img {
+                max-height: none;
+            }
 
             &-second {
                 width: auto;
                 padding: 0;
                 max-width: 512px;
                 margin-right: auto;
+
+                & img {
+                    max-height: none;
+                }
             }
         }
 

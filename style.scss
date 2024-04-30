@@ -1906,6 +1906,13 @@ button {
     &__right {
         width: 33.333%;
         border-left: 1px solid #DED6D6;
+        
+        &-bottom {
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 10px;
+            justify-content: center;
+        }
 
         &-content {
             display: flex;
@@ -1954,6 +1961,10 @@ button {
         display: flex;
         gap: 12px;
         margin: 0 6px 40px 2px;
+
+        & svg {
+            flex-shrink: 0;
+        }
 
         &-content {
             display: flex;
@@ -3262,6 +3273,18 @@ button {
     }
 }
 
+@media (max-width:1875px) {
+    .Basket {
+        &__right {
+            &-bottom {
+                & a {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:1320px) {
     .card__catalog {
         & .card {
@@ -3291,6 +3314,27 @@ button {
     .profile {
         &__right {
             margin-left: auto;
+        }
+    }
+}
+
+@media (max-width:1161px) {
+    .Basket {
+        &__left {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        &__right {
+            width: 341px;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: auto;
+            flex-shrink: 0;
+
+            &-content {
+                padding-left: 20px;
+            }
         }
     }
 }
@@ -3608,6 +3652,12 @@ button {
 
         &__style {
             margin-bottom: 120px;
+        }
+    }
+
+    .Basket {
+        &__row {
+            padding-top: 68px;
         }
     }
 }
@@ -3999,6 +4049,14 @@ button {
             }
         }
     }
+
+    .Basket {
+        &__card {
+            img {
+                max-width: 112px;
+            }
+        }
+    }
 }
 
 @media (max-width:700px) {
@@ -4053,6 +4111,32 @@ button {
 
         &__swiper .card__item-name {
             white-space: wrap;
+        }
+    }
+
+    .Basket {
+        &__row {
+            flex-direction: column;
+            padding-top: 76px;
+        }
+
+        &__left {
+            max-width: 100%;
+            width: auto;
+            padding: 40px 0 0 0;
+            border-bottom: 1px solid #DED6D6;
+        }
+
+        &__right {
+            max-width: 100%;
+            width: auto;
+            border-left: none;
+            margin-left: 0;
+            justify-content: center;
+
+            &-content {
+                padding: 40px 0;
+            }
         }
     }
 }

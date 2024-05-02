@@ -3318,6 +3318,24 @@ button {
     }
 }
 
+@media (max-width:1200px) {
+    .checkout {
+        &__right {
+            &-title {
+                & .subtitle {
+                    line-height: 1;
+                }
+            }
+        }
+
+        &__card {
+            &-title {
+                max-width: 150px;
+            }
+        }
+    }
+}
+
 @media (max-width:1161px) {
     .Basket {
         &__left {
@@ -3658,6 +3676,42 @@ button {
     .Basket {
         &__row {
             padding-top: 68px;
+        }
+    }
+
+    .checkout {
+        &__row {
+            padding-top: 68px;
+        }
+
+        &__card {
+            & img {
+                max-height: 64px;
+            }
+        }
+
+        &__contact {
+            &-information {
+                width: auto;
+                max-width: 420px;
+            }
+        }
+
+        &__right {
+            width: 341px;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: auto;
+            flex-shrink: 0;
+
+            &-content {
+                padding: 39px 0 40px 20px;
+            }
+        }
+
+        &__left {
+            box-sizing: border-box;
+            padding: 39px 20px 0 0;
         }
     }
 }
@@ -4054,6 +4108,56 @@ button {
         &__card {
             img {
                 max-width: 112px;
+            }
+        }
+    }
+
+    .checkout {
+        &__row {
+            flex-direction: column;
+            padding-top: 76px;
+        }
+
+        &__left {
+            width: 100%;
+            padding-right: 0;
+        }
+
+        &__right {
+            border-top: 1px solid #DED6D6;
+            width: 100%;
+            display: inline;
+            margin-left: none;
+            border-left: none;
+            margin-top: 40px;
+
+            &-content {
+                padding: 40px 0;
+            }
+        }
+
+        &__delivery {
+            &-address {
+                flex-direction: column;
+            }
+
+            &-information {
+                max-width: 420px;
+                width: auto;
+            }
+        }
+
+        &__pay {
+            &-method {
+                padding: 8.24px 3px;
+            }
+        }
+
+        &__contact {
+            &-title {
+                & .subtitle {
+                    line-height: 1;
+                }
             }
         }
     }
